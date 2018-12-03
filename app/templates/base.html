@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="">
+    <meta name="author" content="Epaphradito Lugayavu">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/myCss.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/media-queries.css') }}">
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="logo">
+                    <a href="/"><img alt="" src="{{ url_for('static', filename='images/logo.png') }}"></a>
+                </div>
+                <nav id="nav-wrap" class="w3-padding">
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                    <ul id="nav" class="nav">
+                        <li {% block c_home %}{% endblock %}><a href="/">Home</a></li>
+                        <li {% block c_web %}{% endblock %}><a href="/web">Web</a></li>
+                        <li {% block c_educ %}{% endblock %}><a href="/educ">Educ</a></li>
+                        <li {% block c_abt %}{% endblock %}><a href="/about">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+
+    {% block body %}
+    {% endblock %}
+
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="footer-social">
+                    <li><a href="http://www.facebook.com/paphra"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="http://www.twitter.com/paphra"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+                <hr />
+            </div>
+        </div>
+        <section>
+            <div class="row">
+                <div class="bgrid-thirds s-bgrid-halves">
+                    <div class="columns">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="/web">
+                                <span class="fa fa-laptop"></span>Web Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="columns">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li><a href="tel:+256701822382"><span class="fa fa-phone"></span> +256 701 822 382</a></li>
+                            <li><a href="tel:+256777522214"><span class="fa fa-phone"></span> +256 777 522 214</a></li>
+                            <li><a href="mailto:paphra.me@gmail.com"><span class="fa fa-envelope"></span>
+                                    paphra.me@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="columns">
+                        <h5><a href="/educ">Education</a></h5>
+                        <ul>
+                            <li><a href="/educ/phy"><span class="fa fa-book"></span>Physics</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="copyright">
+                    <li>Copyright &copy; <b id="copy-year">2018</b> <span>paphra.com</span></li>
+                    <li>Developed By <a href="/admin">Epaphradito Lugayavu</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/js001.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/myJquery.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/js002.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jsAnims.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
+
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-migrate-1.2.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/doubletaptogo.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/init.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/sendmail.js') }}"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+    </footer>
+
+</body>
+
+</html>

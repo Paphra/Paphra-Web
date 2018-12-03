@@ -1,0 +1,682 @@
+/*
+*
+    Created on : Apr 2, 2017, 2:30:06 PM
+    Author     : Epaphradito
+*/
+
+h1{
+    color: blue;
+}
+
+
+#mainBody, .hm, #hm{
+    height: 100% ;
+    width: 100% ;
+    background-attachment: scroll;
+    background-image: url("440.jpg");
+}
+
+#mainBody{
+    background-color: #fff;
+    color: black;
+}
+
+h3, h4, hr{
+    padding: 0;
+}
+
+hr{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#headNavTd{
+    z-index: 1;
+}
+
+
+#headNavDiv{
+    text-align: center;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+#footNavlist{
+    padding-left: 0;
+}
+#subjectsBtn{
+    display: none;
+    background-color: #00aa00;
+    padding: 5px;
+    cursor: pointer;
+}
+#positioningTable{
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#profPicTd{
+    text-align: center;
+}
+
+#dateTimeDiv{
+    padding: 6px;
+    width: 100%;
+}
+#dateTimeTd{
+}
+#headText{
+    font-family: serif;
+    padding-left: 20%;
+    z-index: 1;
+}
+.headFixed{
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+#headTabMain{
+
+}
+
+td{
+    text-align: left;
+}
+
+#mainTable{
+    text-align: left;
+}
+#headTable{
+    width: 100%;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+
+#navlist {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding-left: 0;
+}
+#navlist li{
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 3px;
+}
+#navlist li:hover{
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+#subjectsNavlist{
+    text-align: left;
+    padding-left: 0;
+}
+#subjectsNavDiv{
+    display: none;
+}
+#subjectsNavList li{
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;
+    background-color: #00aa00;
+    padding-left: 0;
+    padding: 10px;
+}
+#subjectsNavList li:hover{
+    background-color: white;
+    color: black;
+}
+
+#subjectsNavListTd{
+    text-align: left;
+    padding: 10%;
+}
+
+#calendarTd{
+    text-align: right;
+    vertical-align: top;
+}
+
+#calendar{
+
+}
+#loginTd{
+    vertical-align: top;
+}
+
+#loginText{
+
+}
+#loginBtn{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #000;
+    cursor: pointer;
+}
+#loginBtn:hover{
+
+    color: white;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #00e;
+}
+
+
+#signupText{
+
+}
+#signupBtn{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #000;
+    cursor: pointer;
+}
+#signupBtn:hover{
+
+    color: white;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #00e;
+}
+
+#teacherHidden{
+    display: none;
+}
+
+#othersHidden{
+    display: none;
+}
+*{
+    box-sizing: border-box;
+}
+
+.slideshow-container{
+    min-width: 200px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: auto;
+    margin-top: -22px;
+    padding: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease-in;
+    -webkit-transition: background-color 1s ease-in;
+}
+
+
+.active, #dot:hover{
+    background-color: #00ffff;
+
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .2}
+    to{opacity: 1}
+}
+@-moz-keyframes fade{
+    from{opacity: .2}
+    to{opacity: 1}
+}
+
+@keyframes fade{
+    from{opacity:.2}
+    to{opacity:1}
+}
+
+body.hm li.hm{
+    background-color: green;
+}
+#commentFrm{
+    text-align: center;
+    width: 100%;
+}
+
+#leftIcon{
+    height: 80%;
+    width: 80%;
+    text-align: center;
+}
+
+#imageOfBolic2{
+    text-align: right;
+}
+.sla{
+    padding: 3%;
+    background-color: red;
+    font-family: serif;
+    font-style: italic;
+}
+
+#close{
+    cursor: pointer;
+    color: whitesmoke;
+    text-align: right;
+    align-content: flex-end;
+}
+
+#jan, #feb, #mar,#april,#may,#june,#july,#aug,#sept,#oct,#nov,#dec{
+    display: none;
+}
+#hidden1, #hidden2, #hidden3, #hidden4{
+    display: none;
+}
+
+#cPage{
+    display: none;
+}
+
+#homeTab,
+#classTab,
+#meTab,
+#chatsTab,
+#studentsTab,
+#aboutTab,
+#groupsTab,
+#papersTab,
+#loginTab,
+#signupTab
+{
+    background-color: #00aa00;
+    padding: 1%;
+    font-size: 90%;
+    font-family: Comic Sans MS;
+    font-style: oblique;
+}
+
+#homeTab:hover,
+#classTab:hover,
+#meTab:hover,
+#chatsTab:hover,
+#studentsTab:hover,
+#loginTab:hover,
+#signupTab:hover,
+#aboutTab:hover,
+#groupsTab:hover{
+    background-color: #00ffff;;
+    color: black;
+}
+body.homeTab #homeTab,
+body.classTab #classTab,
+body.meTab #meTab,
+body.chatsTab #chatsTab,
+body.studentsTab #studentsTab,
+body.groupsTab #groupsTab,
+body.papersTab #papersTab,
+body.phy #phy, body.art #art, body.bio #bio, body.bus #bus,
+body.his #his, body.geo #geo, body.com #com, body.che #che,
+body.lan #lan, body.mat #mat, body.mus #mus, body.rel #rel,
+body.aboutTab #aboutTab{
+    background-color: #00ffff;;
+    color: black;
+}
+
+body.loginTab #loginTab,
+body.signupTab #signupTab,
+body.aboutTab #aboutTab{
+    background-color: #00ffff;
+    color: black;
+}
+
+#subtopicsListTable td{
+    vertical-align: central;
+}
+
+#headCap{
+    font-family: Comic Sans Ms;
+    color: #673ab7;
+    font-style: oblique;
+    font-size: 60%;
+}
+#logo{
+    text-align: left;
+}
+
+#footNavContactTd{
+    vertical-align: top;
+}
+
+
+#footNavTd{
+    vertical-align: top;
+}
+
+#msnTab,
+#visTab,
+#outrTab,
+#frndsTab,
+#othTab,
+#phtsTab,
+#vidsTab,
+#gandoTab,
+#schlTab,
+#grpsTab{
+    background-color: #0099cc;
+}
+
+.paddinNav{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#socialList li{
+    list-style-type: none;
+}
+#subjectsNavDiv #subjectsBtn:hover {
+    display: block;
+}
+
+#olevelList{
+    align-content: center;
+    text-align: left;
+    padding-left: 0;
+}
+
+
+#olevelList li{
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;
+    background-color: #00aa00;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 14%;
+}
+
+#olevelList li:hover{
+    background-color: white;
+}
+
+#subtpList{
+    z-index: 0;
+
+}
+
+#subtpList{
+    list-style-type: none;
+    padding-left: 0;
+}
+#subtpList td{
+    cursor: pointer;
+    background-color: #fff;
+}
+#subtpList td:hover{
+    background-color: white;
+    color: black;
+}
+#subtpList li{
+
+}
+
+body.int #int,
+body.aaf #aaf,
+body.den #den,
+body.faw #faw,
+body.lav #lav,
+body.mac #mac,
+body.mif #mif,
+body.mli #mli,
+body.mom #mom,
+body.mome #mome,
+body.mot #mot,
+body.mpm #mpm,
+body.nlm #nlm,
+body.pnm #pnm,
+body.pre #pre,
+body.qns #qns,
+body.wpe #wpe{
+    background-color: white;
+}
+
+body.mot li#mot{
+    background-color: white;
+}
+.oo{
+    background-color: white;
+}
+
+.int,.mot{
+    text-align: left;
+}
+
+#keyword{
+    font-style: oblique;
+}
+table td{
+    vertical-align: central;
+    text-align: left;
+}
+
+#listSq{
+    list-style-type: square;
+    margin-left: 0.7em;
+}
+#listRm{
+    list-style-type: lower-roman;
+    margin-left: 0.7em;
+}
+#listNum{
+    list-style-type:  decimal;
+    margin-left: 0.7em;
+}
+.listNum li:before{
+    list-style-type:  decimal;
+    margin-left: 0.7em;
+}
+#listAlpha{
+    list-style-type: lower-alpha;
+    margin-left: 0.7em;
+}
+#listNone li{
+    list-style-type: none;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#listNoneNone li{
+    list-style-type: none;
+    margin-left: 0.7em;
+}
+#listNone li:hover{
+    background-color: #fff;
+}
+
+#listNone{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+#listAlpha li, #listNum li, #listRm li, #listNone li, #listSq li, #listNoneNone li {
+    font-family: georgia, serif;
+    margin-left: 1em;
+}
+
+#contentTable3 tr:hover{
+    background-color: #cccc00;
+    z-index: 0;
+}
+
+#contentTable3{
+    text-align: left;
+}
+#contentTable3 td{
+    text-align: left;
+}
+#calcTable td{
+    text-align: left;
+}
+#exerciseTable td{
+    text-align: left;
+}
+#mainTable2 td{
+    text-align: left;
+}
+#pow{
+    baseline-shift: 20%;
+}
+
+#profileShow{
+    display: none;
+    position: fixed;
+    z-index: 3;
+}
+
+#searchBtn
+{
+    height: 30px;
+    width: 30px;
+    border: 0px;
+}
+#homeIcon{
+    height: 60px;
+    width: 60px;
+}
+
+#endOfChapter{
+    padding: 10px;
+    font-family: Comic Sans MS;
+    font-size: 120%;
+    background-color: #000;
+    text-align: center;
+    color: white;
+}
+
+.home{
+    width: 100%;
+}
+
+#homeDiv{
+    width: 100%;
+}
+
+#heading{
+    padding: 0.7em;
+    color: #f2f2f2;
+    background-color: gray;
+}
+
+#mainHeading{
+    padding: 0.3em;
+    color: #f2f2f2;
+    background-color: gray;
+}
+
+#othCou{
+    display: none;
+}
+
+#profPicIcon{
+    width: 50px;
+    height: 50px;
+}
+
+#profileTable td{
+    vertical-align: central;
+    padding: 1rem;
+    text-align: center;
+}
+
+#profileTable{
+    padding-bottom: 0;
+}
+
+#get01{
+    display: none;
+}
+
+#expl{
+    padding-left: 1em;
+}
+
+.names{
+    font-family: Comic Sans MS;
+    font-style: italic;
+}
+
+.one, .two, .three, .four{
+    color: #000;
+}
+
+.newton{
+    display: none;
+}
+
+.phyBg{
+    background-image: url("/educ/images/pic04.jpg");
+}
+
+.ser{
+    font-family: serif;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, div {
+    margin: 2em;
+}

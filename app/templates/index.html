@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Home - paphra.com{% endblock title %}
+{% block c_home %}class="current w3-bottombar"{% endblock c_home %}
+
+{% block body %}
+<section id="works" style="background-image: url('{{ url_for('static', filename='images/440.jpg') }}')">
+	<div class="row">
+		<div id="portfolio-wrapper">
+			<div class="six columns portfolio-item">
+				<div class="item-wrap">
+					<a href="/electronics">
+						<img alt="" src="{{ url_for('static', filename='images/elec/elecw007.jpg') }}">
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="fa fa-link"></i></div>
+					</a>
+					<div class="portfolio-item-meta">
+						<h5><a href="/electronics">Electronics and Electrical Installation Services</a></h5>
+						<p>Contact us for Professional Electrical Installation services.
+							Budgeting, Planning and Mapping/Structuring of the Electrical Systems for the Houses.
+							Wiring is done more splendidly and at Affordable prices.</p>
+					</div>
+				</div>
+			</div>
+			<div class="six columns portfolio-item">
+				<div class="item-wrap">
+					<a href="/web">
+						<img alt="" src="{{ url_for('static', filename='images/web/web.jpg') }}">
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="fa fa-link"></i></div>
+					</a>
+					<div class="portfolio-item-meta">
+						<h5><a href="/web">Web Development and Designing</a></h5>
+						<p class="">
+							At Paphra, we do web designing and development, plus publishing, maintenance, online database
+							management and structuring. Budgeting for all the expenses is done for any given type of
+							web-site to be created.
+							We do domain searches, domain registration, and we seek out the most affordable hosting services
+							that will blow you away. Just get in touch with us for all your web solutions.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="portfolio-wrapper">
+			<div class="six columns portfolio-item">
+				<div class="item-wrap">
+					<a href="/educ/phy">
+						<img alt="" src="{{ url_for('static', filename='images/educ/phy002 emc.jpg') }}">
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="fa fa-link"></i></div>
+					</a>
+					<div class="portfolio-item-meta">
+						<h5><a href="/educ/phy">Physics</a></h5>
+						<p>The Physics for a firm revision ground, both A, and O' levels of Education.<br />
+							Practically and Theoretically making you ready for the final exams.</p>
+					</div>
+				</div>
+			</div>
+			<div class="six columns portfolio-item">
+				<div class="item-wrap">
+					<a href="/admin">
+						<img alt="" src="{{ url_for('static', filename='images/paphra/paphra001.jpg') }}" />
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="fa fa-link"></i></div>
+					</a>
+					<div class="portfolio-item-meta">
+						<h5><a href="/admin">Epaphradito Lugayavu</a></h5>
+						<p>The founder and sole proprietor of this platform. Visit his profile and follow him on social Media for
+							the latest updates about all things posted here.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="works">
+	<div class="w3-white" id="section-inner-wrapper">
+		<div class="row">
+			<div class="twelve columns align-center">
+				<h1>Why us ... </h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="portfolio-wrapper">
+				<div class="six columns align-center">
+					<img alt="" src="{{ url_for('static', filename='images/elec/elecw009.jpg') }}">
+				</div>
+				<div class="six columns portfolio-item">
+					<div class="item-wrap">
+						<br />
+						<div class="portfolio-item-meta">
+							<h5><a>Quality Electronics and Electrical Home Appliances</a></h5>
+							<p class="w3-medium">Safe and secure, rest assured that there is no problem that might lead to electric shocks.
+								Budgeting done extensively precise and well calculated. Discounts offered at good rates. Done by professionals.
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="portfolio-wrapper">
+				<div class="six columns portfolio-item">
+					<div class="item-wrap">
+						<br />
+						<div class="portfolio-item-meta">
+							<h5><a>Quality Web design and Development</a></h5>
+							<p class="w3-medium">The highest quality in the Market. Responsive to all the devices and highly customizable.
+								Nice looking and well shaped for you and your customers. Come, lets usher you in the new
+								online looks, and take your business to the next level.
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+				<div class="six columns align-center">
+					<img alt="" src="{{ url_for('static', filename='images/web/webw003.jpg') }}">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="portfolio-wrapper">
+				<div class="six columns align-center">
+					<img alt="" src="{{ url_for('static', filename='images/educ/online.jpg') }}">
+				</div>
+				<div class="six columns portfolio-item">
+					<div class="item-wrap">
+						<br />
+						<div class="portfolio-item-meta">
+							<h5><a>Web Tutorials</a></h5>
+							<p class="w3-medium">The perfect tutoring, understanding everything that you don't know about web-site
+								development.
+								Cheap but guaranteed to provide world wide accepted skills, to give you a job in the field. Improve your skills
+								that you already have.
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="portfolio-wrapper">
+				<div class="six columns portfolio-item">
+					<div class="item-wrap">
+						<br />
+						<div class="portfolio-item-meta">
+							<h5><a>Perfect Physics</a></h5>
+							<p class="w3-medium">Physics that changes grades for all the students at both levels (O and A)
+								of education. Theoretical Physics and Practical Physics. Providing the perfect
+								way to study ahead and get a second class for all the students.
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+				<div class="six columns align-center">
+					<img alt="" src="{{ url_for('static', filename='images/educ/physw008.jpg') }}">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock body %}

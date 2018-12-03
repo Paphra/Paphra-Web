@@ -10,11 +10,6 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/elec")
-def electronics():
-    pass
-
-
 @app.route("/web")
 def web():
     pass

@@ -4,94 +4,102 @@
     Author     : Epaphradito
 */
 
-h1{
+h1 {
     color: blue;
 }
 
-
-#mainBody, .hm, #hm{
-    height: 100% ;
-    width: 100% ;
+#mainBody,
+.hm,
+#hm {
+    height: 100%;
+    width: 100%;
     background-attachment: scroll;
     background-image: url("440.jpg");
 }
 
-#mainBody{
+#mainBody {
     background-color: #fff;
     color: black;
 }
 
-h3, h4, hr{
+h3,
+h4,
+hr {
     padding: 0;
 }
 
-hr{
+hr {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-#headNavTd{
+
+#headNavTd {
     z-index: 1;
 }
 
-
-#headNavDiv{
+#headNavDiv {
     text-align: center;
     width: 100%;
     display: none;
     z-index: 1;
 }
-#footNavlist{
+
+#footNavlist {
     padding-left: 0;
 }
-#subjectsBtn{
+
+#subjectsBtn {
     display: none;
     background-color: #00aa00;
     padding: 5px;
     cursor: pointer;
 }
-#positioningTable{
+
+#positioningTable {
     background-color: white;
     margin-left: 5%;
     margin-right: 5%;
 }
-#profPicTd{
+
+#profPicTd {
     text-align: center;
 }
 
-#dateTimeDiv{
+#dateTimeDiv {
     padding: 6px;
     width: 100%;
 }
-#dateTimeTd{
-}
-#headText{
+
+#headText {
     font-family: serif;
     padding-left: 20%;
     z-index: 1;
 }
-.headFixed{
+
+.headFixed {
     position: fixed;
     background-color: white;
     top: 0px;
     width: 100%;
     z-index: 1;
 }
-#headTabMain{
 
-}
+#headTabMain {}
 
-td{
+td {
     text-align: left;
 }
 
-#mainTable{
+#mainTable {
     text-align: left;
 }
-#headTable{
+
+#headTable {
     width: 100%;
     z-index: 1;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -101,27 +109,31 @@ a{
     background-color: white;
     padding-left: 0;
 }
-#navlist li{
+
+#navlist li {
     display: inline;
     text-decoration: none;
     list-style-type: none;
     cursor: pointer;
     padding: 3px;
 }
-#navlist li:hover{
+
+#navlist li:hover {
     background-color: white;
     color: black;
     padding: 5px;
 }
 
-#subjectsNavlist{
+#subjectsNavlist {
     text-align: left;
     padding-left: 0;
 }
-#subjectsNavDiv{
+
+#subjectsNavDiv {
     display: none;
 }
-#subjectsNavList li{
+
+#subjectsNavList li {
     list-style-type: none;
     text-align: left;
     cursor: pointer;
@@ -129,32 +141,31 @@ a{
     padding-left: 0;
     padding: 10px;
 }
-#subjectsNavList li:hover{
+
+#subjectsNavList li:hover {
     background-color: white;
     color: black;
 }
 
-#subjectsNavListTd{
+#subjectsNavListTd {
     text-align: left;
     padding: 10%;
 }
 
-#calendarTd{
+#calendarTd {
     text-align: right;
     vertical-align: top;
 }
 
-#calendar{
+#calendar {}
 
-}
-#loginTd{
+#loginTd {
     vertical-align: top;
 }
 
-#loginText{
+#loginText {}
 
-}
-#loginBtn{
+#loginBtn {
     width: 100%;
     color: white;
     text-align: center;
@@ -163,8 +174,8 @@ a{
     background-color: #000;
     cursor: pointer;
 }
-#loginBtn:hover{
 
+#loginBtn:hover {
     color: white;
     text-align: center;
     padding-top: 0.5%;
@@ -172,11 +183,9 @@ a{
     background-color: #00e;
 }
 
+#signupText {}
 
-#signupText{
-
-}
-#signupBtn{
+#signupBtn {
     width: 100%;
     color: white;
     text-align: center;
@@ -185,8 +194,8 @@ a{
     background-color: #000;
     cursor: pointer;
 }
-#signupBtn:hover{
 
+#signupBtn:hover {
     color: white;
     text-align: center;
     padding-top: 0.5%;
@@ -194,28 +203,30 @@ a{
     background-color: #00e;
 }
 
-#teacherHidden{
+#teacherHidden {
     display: none;
 }
 
-#othersHidden{
+#othersHidden {
     display: none;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
 
-.slideshow-container{
+.slideshow-container {
     min-width: 200px;
     position: relative;
     margin: auto;
 }
 
-.mySlides{
+.mySlides {
     display: none;
 }
 
-.prev, .next{
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -232,16 +243,17 @@ a{
     border-radius: 0 3px 3px 0;
 }
 
-.next{
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover{
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.numbertext{
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -249,7 +261,7 @@ a{
     top: 0;
 }
 
-.dot{
+.dot {
     cursor: pointer;
     height: 13px;
     width: 13px;
@@ -261,13 +273,12 @@ a{
     -webkit-transition: background-color 1s ease-in;
 }
 
-
-.active, #dot:hover{
+.active,
+#dot:hover {
     background-color: #00ffff;
-
 }
 
-.fade{
+.fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
     -moz-animation-name: fade;
@@ -276,59 +287,92 @@ a{
     animation-duration: 2s;
 }
 
-@-webkit-keyframes fade{
-    from{opacity: .2}
-    to{opacity: 1}
-}
-@-moz-keyframes fade{
-    from{opacity: .2}
-    to{opacity: 1}
+@-webkit-keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-@keyframes fade{
-    from{opacity:.2}
-    to{opacity:1}
+@-moz-keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-body.hm li.hm{
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+body.hm li.hm {
     background-color: green;
 }
-#commentFrm{
+
+#commentFrm {
     text-align: center;
     width: 100%;
 }
 
-#leftIcon{
+#leftIcon {
     height: 80%;
     width: 80%;
     text-align: center;
 }
 
-#imageOfBolic2{
+#imageOfBolic2 {
     text-align: right;
 }
-.sla{
+
+.sla {
     padding: 3%;
     background-color: red;
     font-family: serif;
     font-style: italic;
 }
 
-#close{
+#close {
     cursor: pointer;
     color: whitesmoke;
     text-align: right;
     align-content: flex-end;
 }
 
-#jan, #feb, #mar,#april,#may,#june,#july,#aug,#sept,#oct,#nov,#dec{
-    display: none;
-}
-#hidden1, #hidden2, #hidden3, #hidden4{
+#jan,
+#feb,
+#mar,
+#april,
+#may,
+#june,
+#july,
+#aug,
+#sept,
+#oct,
+#nov,
+#dec {
     display: none;
 }
 
-#cPage{
+#hidden1,
+#hidden2,
+#hidden3,
+#hidden4 {
+    display: none;
+}
+
+#cPage {
     display: none;
 }
 
@@ -341,8 +385,7 @@ body.hm li.hm{
 #groupsTab,
 #papersTab,
 #loginTab,
-#signupTab
-{
+#signupTab {
     background-color: #00aa00;
     padding: 1%;
     font-size: 90%;
@@ -358,10 +401,12 @@ body.hm li.hm{
 #loginTab:hover,
 #signupTab:hover,
 #aboutTab:hover,
-#groupsTab:hover{
-    background-color: #00ffff;;
+#groupsTab:hover {
+    background-color: #00ffff;
+    ;
     color: black;
 }
+
 body.homeTab #homeTab,
 body.classTab #classTab,
 body.meTab #meTab,
@@ -369,41 +414,51 @@ body.chatsTab #chatsTab,
 body.studentsTab #studentsTab,
 body.groupsTab #groupsTab,
 body.papersTab #papersTab,
-body.phy #phy, body.art #art, body.bio #bio, body.bus #bus,
-body.his #his, body.geo #geo, body.com #com, body.che #che,
-body.lan #lan, body.mat #mat, body.mus #mus, body.rel #rel,
-body.aboutTab #aboutTab{
-    background-color: #00ffff;;
+body.phy #phy,
+body.art #art,
+body.bio #bio,
+body.bus #bus,
+body.his #his,
+body.geo #geo,
+body.com #com,
+body.che #che,
+body.lan #lan,
+body.mat #mat,
+body.mus #mus,
+body.rel #rel,
+body.aboutTab #aboutTab {
+    background-color: #00ffff;
+    ;
     color: black;
 }
 
 body.loginTab #loginTab,
 body.signupTab #signupTab,
-body.aboutTab #aboutTab{
+body.aboutTab #aboutTab {
     background-color: #00ffff;
     color: black;
 }
 
-#subtopicsListTable td{
+#subtopicsListTable td {
     vertical-align: central;
 }
 
-#headCap{
+#headCap {
     font-family: Comic Sans Ms;
     color: #673ab7;
     font-style: oblique;
     font-size: 60%;
 }
-#logo{
+
+#logo {
     text-align: left;
 }
 
-#footNavContactTd{
+#footNavContactTd {
     vertical-align: top;
 }
 
-
-#footNavTd{
+#footNavTd {
     vertical-align: top;
 }
 
@@ -416,32 +471,32 @@ body.aboutTab #aboutTab{
 #vidsTab,
 #gandoTab,
 #schlTab,
-#grpsTab{
+#grpsTab {
     background-color: #0099cc;
 }
 
-.paddinNav{
+.paddinNav {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2%;
     padding-top: 2%;
 }
 
-#socialList li{
+#socialList li {
     list-style-type: none;
 }
+
 #subjectsNavDiv #subjectsBtn:hover {
     display: block;
 }
 
-#olevelList{
+#olevelList {
     align-content: center;
     text-align: left;
     padding-left: 0;
 }
 
-
-#olevelList li{
+#olevelList li {
     list-style-type: none;
     text-align: left;
     cursor: pointer;
@@ -451,30 +506,30 @@ body.aboutTab #aboutTab{
     padding-right: 14%;
 }
 
-#olevelList li:hover{
+#olevelList li:hover {
     background-color: white;
 }
 
-#subtpList{
+#subtpList {
     z-index: 0;
-
 }
 
-#subtpList{
+#subtpList {
     list-style-type: none;
     padding-left: 0;
 }
-#subtpList td{
+
+#subtpList td {
     cursor: pointer;
     background-color: #fff;
 }
-#subtpList td:hover{
+
+#subtpList td:hover {
     background-color: white;
     color: black;
 }
-#subtpList li{
 
-}
+#subtpList li {}
 
 body.int #int,
 body.aaf #aaf,
@@ -492,115 +547,134 @@ body.nlm #nlm,
 body.pnm #pnm,
 body.pre #pre,
 body.qns #qns,
-body.wpe #wpe{
+body.wpe #wpe {
     background-color: white;
 }
 
-body.mot li#mot{
-    background-color: white;
-}
-.oo{
+body.mot li#mot {
     background-color: white;
 }
 
-.int,.mot{
+.oo {
+    background-color: white;
+}
+
+.int,
+.mot {
     text-align: left;
 }
 
-#keyword{
+#keyword {
     font-style: oblique;
 }
-table td{
+
+table td {
     vertical-align: central;
     text-align: left;
 }
 
-#listSq{
+#listSq {
     list-style-type: square;
     margin-left: 0.7em;
 }
-#listRm{
+
+#listRm {
     list-style-type: lower-roman;
     margin-left: 0.7em;
 }
-#listNum{
-    list-style-type:  decimal;
+
+#listNum {
+    list-style-type: decimal;
     margin-left: 0.7em;
 }
-.listNum li:before{
-    list-style-type:  decimal;
+
+.listNum li:before {
+    list-style-type: decimal;
     margin-left: 0.7em;
 }
-#listAlpha{
+
+#listAlpha {
     list-style-type: lower-alpha;
     margin-left: 0.7em;
 }
-#listNone li{
+
+#listNone li {
     list-style-type: none;
     padding-bottom: 1em;
     padding-top: 1em;
 }
 
-#listNoneNone li{
+#listNoneNone li {
     list-style-type: none;
     margin-left: 0.7em;
 }
-#listNone li:hover{
+
+#listNone li:hover {
     background-color: #fff;
 }
 
-#listNone{
-    background-color: rgba(0,0,0,0.8);
+#listNone {
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
-#listAlpha li, #listNum li, #listRm li, #listNone li, #listSq li, #listNoneNone li {
+#listAlpha li,
+#listNum li,
+#listRm li,
+#listNone li,
+#listSq li,
+#listNoneNone li {
     font-family: georgia, serif;
     margin-left: 1em;
 }
 
-#contentTable3 tr:hover{
+#contentTable3 tr:hover {
     background-color: #cccc00;
     z-index: 0;
 }
 
-#contentTable3{
+#contentTable3 {
     text-align: left;
 }
-#contentTable3 td{
+
+#contentTable3 td {
     text-align: left;
 }
-#calcTable td{
+
+#calcTable td {
     text-align: left;
 }
-#exerciseTable td{
+
+#exerciseTable td {
     text-align: left;
 }
-#mainTable2 td{
+
+#mainTable2 td {
     text-align: left;
 }
-#pow{
+
+#pow {
     baseline-shift: 20%;
 }
 
-#profileShow{
+#profileShow {
     display: none;
     position: fixed;
     z-index: 3;
 }
 
-#searchBtn
-{
+#searchBtn {
     height: 30px;
     width: 30px;
     border: 0px;
 }
-#homeIcon{
+
+#homeIcon {
     height: 60px;
     width: 60px;
 }
 
-#endOfChapter{
+#endOfChapter {
     padding: 10px;
     font-family: Comic Sans MS;
     font-size: 120%;
@@ -609,74 +683,95 @@ table td{
     color: white;
 }
 
-.home{
+.home {
     width: 100%;
 }
 
-#homeDiv{
+#homeDiv {
     width: 100%;
 }
 
-#heading{
+.center {
+    text-align: center;
+}
+
+#heading {
     padding: 0.7em;
     color: #f2f2f2;
     background-color: gray;
 }
 
-#mainHeading{
+#mainHeading {
     padding: 0.3em;
     color: #f2f2f2;
     background-color: gray;
 }
 
-#othCou{
+#mainHeading a {
+    padding: 0.3em;
+    font-size: 140%;
+    color: #fff
+}
+
+#othCou {
     display: none;
 }
 
-#profPicIcon{
+#profPicIcon {
     width: 50px;
     height: 50px;
 }
 
-#profileTable td{
+#profileTable td {
     vertical-align: central;
     padding: 1rem;
     text-align: center;
 }
 
-#profileTable{
+#profileTable {
     padding-bottom: 0;
 }
 
-#get01{
+#get01 {
     display: none;
 }
 
-#expl{
+#expl {
     padding-left: 1em;
 }
 
-.names{
+.names {
     font-family: Comic Sans MS;
     font-style: italic;
 }
 
-.one, .two, .three, .four{
+.one,
+.two,
+.three,
+.four {
     color: #000;
 }
 
-.newton{
+.newton {
     display: none;
 }
 
-.phyBg{
+.phyBg {
     background-image: url("/educ/images/pic04.jpg");
 }
 
-.ser{
+.ser {
     font-family: serif;
 }
 
-body, p, h1, h2, h3, h4, h5, h6, div {
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
     margin: 2em;
 }

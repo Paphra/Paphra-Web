@@ -1,0 +1,19 @@
+{% extends "educ/phy/index.html" %}
+{% block title %}O'level Physics - Paphra{% endblock %}
+{% block page_title %}O' Level Physics{% endblock page_title %}
+{% block c_educ_phy %}class="current w3-bottombar"{% endblock c_educ_phy %}
+{% block c_educ_phy_o %}class="current w3-bottombar"{% endblock c_educ_phy_o %}
+
+{% block educ_nav_phy_o %}
+{% include 'educ/phy/o/topics.html' %}
+{% endblock educ_nav_phy_o %}
+
+{% block educ_content %}
+
+{% if request.args['tp'] == 'mechanics' or not request.args['tp'] %}
+{% include 'educ/phy/o/topics/mec.html' %}
+{% elif request.args['tp'] == 'light' %}
+{% include 'educ/phy/o/topics/lig.html' %}
+{% endif %}
+
+{% endblock educ_content %}

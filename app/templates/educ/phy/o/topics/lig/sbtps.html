@@ -1,0 +1,12 @@
+<nav id="" class="w3-white align-center">
+    <select onchange="subRedir()"
+	    id="subListLig" class="w3-input w3-animate-input" >
+	<option <?php if ($subtopic == 'int' || $subtopic == '') { ?>
+	    selected="true"
+	    <?php } ?> title="Click To View" value="int">Introduction</option>
+	<option <?php if ($subtopic == 'refl') { ?>
+    	    selected="true"
+	    <?php } ?> title="Click To View" value="refl">Reflection</option>
+
+    </select>
+</nav>

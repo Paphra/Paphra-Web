@@ -1,0 +1,156 @@
+{% extends 'base.html'%}
+{% block title %}Web - Paphra{% endblock title %}
+{% block c_web %}class="current w3-bottombar"{% endblock c_web %}
+{% block page_title %}Web Developement{% endblock page_title %}
+
+{% block body %}
+<!-- Why Section
+================================================== -->
+<section id="works" class="w3-white">
+
+	<div class="row">
+
+		<div class="twelve columns align-center">
+			<h1>Why us ... </h1>
+		</div>
+		<div class="row">
+
+			<div id="portfolio-wrapper" class="bgrid-halves s-bgrid-halves">
+
+				<div class="columns portfolio-item">
+
+					<div class="item-wrap">
+						<br />
+						<div class="portfolio-item-meta">
+							<h5><a>Affordable</a></h5>
+							<p class="w3-medium">
+								Sites are designed, developed and maintained a cost which is affordable for all the customers.
+								Domains are purchased from the best affordable sellers allover the world. Hosting plans are
+								suitably chosen for depending on the need of the customer and the affordable price the customer can
+								offer. With some exceptions, we also work with free hosting sites as long as a customer can afford to
+								purchase a domain. Paphra, your web solutions.
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+
+				<div class="columns portfolio-item">
+
+					<img alt="" src="{{url_for('static', filename='images/educ/ictMain.png')}}">
+
+				</div>
+
+			</div>
+		</div> <!-- End of Physics -->
+
+		<div class="row">
+
+			<div id="portfolio-wrapper" class="bgrid-halves s-bgrid-halves">
+
+				<div class="columns portfolio-item">
+
+					<img alt="" src="{{url_for('static', filename='images/web/webw002.jpg')}}">
+
+				</div>
+
+				<div class="columns portfolio-item">
+
+					<div class="item-wrap">
+						<br />
+						<div class="portfolio-item-meta">
+							<h5><a>Professionalism</a></h5>
+							<p class="w3-medium">
+								Highly trained and experienced web developers and designers at your disposal.
+								We make sure that your site is handled by the most experienced personnel, the best in this field
+								guaranteeing that no breakdowns are experienced on your site. Experience
+								is the best teacher, that is why at Paphra, we use the most experienced and trained
+								people to deliver the best.
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div id="portfolio-wrapper" class="bgrid-halves s-bgrid-halves">
+
+				<div class="columns portfolio-item">
+
+					<div class="item-wrap">
+						<br />
+						<div class="portfolio-item-meta">
+							<h5><a>Secure and Guaranteed</a></h5>
+							<p class="w3-medium">We offer on site monitoring and maintenance the first three (3) months
+								after the web publication process free of charge. This is to make sure that our developers
+								have done a wonderful job and that our customers are satisfied with our services.
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+
+				<div class="columns portfolio-item">
+					<img alt="" src="{{url_for('static', filename='images/web/webw004.jpg')}}">
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Prices Section
+================================================== -->
+<section id="works" class="w3-white">
+
+	<div class="row">
+
+		<div class="twelve columns align-center">
+			<h1>Costs ...</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<h3><a>Our price ranges are given below</a></h3>
+			<ul id="listNum">
+				<div class="row">
+					<div class="bgrid-thirds s-bgrid-thirds">
+						<div class="columns">
+							<li>
+								<h5>Web Development only</h5>
+								<h4>
+									UGX 100,000 - UGX 300,000
+								</h4>
+							</li>
+							<li>
+								<h5>Web Development and Publishing with One Year</h5>
+								<h4>
+									UGX 200,000 - UGX 500,000
+								</h4>
+							</li>
+						</div>
+						<div class="columns">
+							<li>
+								<h5>Web Development, Publishing, and Maintenance</h5>
+								<h4>UGX 200,000 for Development and Publishing costs, then;</h4>
+								<h4>
+									UGX 100,000 - UGX 300,000 per month
+								</h4>
+							</li>
+						</div>
+						<div class="columns">
+							<img alt="" src="{{url_for('static', filename='images/web/webw007.jpg')}}">
+						</div>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</div>
+
+</section>
+
+{% endblock body %}

@@ -1,0 +1,12 @@
+<li {% if request.args['sbtp']=='int' or not request.args['sbtp'] %} class='w3-bottombar current' {% endif %}>
+	<a href="?tp=mechanics&sbtp=int#int">Introduction</a></li>
+<li {% if request.args['sbtp']=='lav' %} class='w3-bottmbar current' {% endif %}>
+	<a href="?tp=mechanics&sbtp=lav#lav">Length, Area and Volume</a></li>
+<li {% if request.args['sbtp']=='mad' %} class='w3-bottmbar current' {% endif %}>
+	<a href="?tp=mechanics&sbtp=mad#mad">Mass and Density</a></li>
+<li {% if request.args['sbtp']=='faw' %} class='w3-bottmbar current' {% endif %}>
+	<a href="?tp=mechanics&sbtp=faw#mad">Force and Weight</a></li>
+<li {% if request.args['sbtp']=='wpe' %} class='w3-bottmbar current' {% endif %}>
+	<a href="?tp=mechanics&sbtp=wpe#wpe">Work, Power and Energy</a></li>
+<li {% if request.args['sbtp']=='pre' %} class='w3-bottmbar current' {% endif %}>
+	<a href="?tp=mechanics&sbtp=pre#pre">Pressure</a></li>

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block c_educ %}class="current w3-bottombar"{% endblock c_educ %}
+
+{% block body %}
+
+<div id="content">
+    <div id="page-content" class="row page">
+
+        <div id="secondary" class="four columns start">
+            <aside id="sidebar" class="w3-white w3-padding">
+                <div class="widget widget_text">
+                    <div class="action">
+                        <h2><a href="/educ">Paphra Educ</a></h2>
+                    </div>
+                    <ol>
+                        <li>
+                            <h3 {% block c_educ_phy %}{% endblock c_educ_phy %}>
+                                <a href="/educ/phy">Physics</a>
+                            </h3>
+                            <ul class="disc">
+                                {% block educ_nav_phy %}
+                                {% endblock educ_nav_phy %}
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+
+        <div id="primary" class="eight columns">
+            {% block educ_content %}
+            {% endblock educ_content %}
+        </div>
+    </div>
+</div>
+{% endblock body %}

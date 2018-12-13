@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}About Us{% endblock title %}
+{% block c_abt %}class="current w3-bottombar"{% endblock c_abt %}
+
+{% block page_title %}About Us{% endblock page_title%}
+
+{% block body %}
+<!-- Content
+	================================================== -->
+<div id="content">
+	<div id="page-content" class="row page">
+		<div id="primary" class="eight columns">
+			<section>
+				<h1>Meet our talented team.</h1>
+				<p class="lead">Our team is comprised of highly experienced personnel ready to offer their best.
+					In all fields, we pick the best people for the contents and we make sure that the end user gets the best
+					out of Us. Free services have highly filtered content to ensure that there is no misleading mistakes.</p>
+
+				<p>This has made us the number one in our field of service. Just sit back and relax at paphra.com
+					... Offering high quality services is our norm and this custom has been with us ever since we started reaching out
+					to you people.</p>
+
+				<div class="row">
+					<div id="team-wrapper" class="cf">
+						<div class="column member">
+							<img src="{{url_for('static', filename='images/paphra/paphra001.jpg')}}" alt="" />
+							<div class"member-name">
+								<h3><a href="/admin/">Mr. Epaphradito Lugayavu</a></h3>
+								<span>Creative Director</span>
+							</div>
+
+							<p>Also Known as Paphra, the founder of this wonderful platform. He started it in 2017 when he was
+								still pursuing a Diploma in Meteorology at <a href="http://www.nmts.ac.ug">National Meteorological Training
+									School (NMTS) Entebbe.
+								</a> At the same time, he was part-timing at Kitala Secondary School as a Physics Teacher. He is still a
+								teacher at that school
+								currently focusing much on the Field of Practical Physics.</p>
+
+							<ul class="member-social">
+								<li><a href="facebook.com/permutit"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="twitter.com/PaphraL"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="googleplus.com/epaphradito"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="linkedin.com/epaphradito"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-skype"></i></a></li>
+							</ul>
+
+						</div>
+
+					</div> <!-- row End -->
+
+			</section> <!-- section end -->
+
+
+		</div> <!-- primary end -->
+
+		<div id="secondary" class="four columns end">
+
+			<aside id="sidebar" class="">
+
+				<div class="widget widget_text">
+					<h3><a href="/users/signup/?t=signup">Follow Us.</a></h3>
+					<p>Get updates everywhere you go.</p>
+					<div class="action">
+						<a href="http://www.facebook.com/paphra" class="button">Facebook</a>
+					</div>
+				</div>
+
+				<div class="widget widget_contact">
+					<h5>Address and Phone</h5>
+					<p class="address">
+						<div class="w3-leftbar w3-padding w3-card-24">
+							<span class="fa fa-map-marker"></span> Entebbe, Uganda<br />
+							<span class="fa fa-phone"></span> +256 701822382 <br />
+							<span class="fa fa-phone"></span> +256 777522214<br />
+						</div>
+
+					</p>
+
+					<h5>Email and Social</h5>
+					<p>
+						<span class="fa fa-envelope"></span> paphra.educ@gmail.com<br />
+						Facebook: <a href="http://www.facebook.com/paphra" target="_blank"><i class="fa fa-facebook">Facebook</i></a><br />
+						Twitter: <a href="http://www.twitter.com/paphra" target="_blank"><i class="fa fa-twitter">Paphra</i></a><br />
+
+					</p>
+				</div>
+
+			</aside>
+
+		</div> <!-- secondary End-->
+
+	</div> <!-- page-content End-->
+
+</div> <!-- Content End-->
+
+{% endblock body %}

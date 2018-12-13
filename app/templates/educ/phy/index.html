@@ -1,0 +1,83 @@
+{% extends "educ/base.html" %}
+{% block title %}Physics - Paphra{% endblock %}
+{% block page_title %}Paphra Physics{% endblock page_title %}
+{% block c_educ_phy %}class="current w3-bottombar"{% endblock c_educ_phy %}
+
+{% block educ_nav_phy %}
+<li>
+	<a href="/educ/phy/o" {% block c_educ_phy_o %}{% endblock c_educ_phy_o %}>O' Level Physics</a>
+	<ol>
+		{% block educ_nav_phy_o %}{% endblock educ_nav_phy_o %}
+	</ol>
+</li>
+<li>
+	<a href="/educ/phy/laws" {% block c_educ_phy_lp %}{% endblock c_educ_phy_lp %}>Physics Laws and Principles</a>
+	<ol>
+		{% block educ_nav_phy_lp %}{% endblock educ_nav_phy_lp %}
+	</ol>
+</li>
+<li>
+	<a href="/educ/phy/definitions" {% block c_educ_phy_d %}{% endblock c_educ_phy_d %}>Physics Definitions</a>
+	<ol>
+		{% block educ_nav_phy_d %}{% endblock educ_nav_phy_d %}
+	</ol>
+</li>
+{% endblock educ_nav_phy %}
+
+{% block educ_content %}
+
+<!-- One -->
+<section id="One" class="">
+	<div class="align-center row">
+		<div id="portfolio-wrapper" class="bgrid-halves s-bgrid-halves">
+			<div>
+				<div class="columns portfolio-item" title="One Click To Practical Physics">
+					<div class="item-wrap">
+						<a href="/educ/phy/o">
+							<img class="w3-round-jumbo" src="{{url_for('static', filename='images/educ/physw001.jpg')}}" />
+							<div class="overlay"></div>
+							<div class="link-icon"><i class="fa fa-link"></i></div>
+						</a>
+						<div class="portfolio-item-meta">
+							<h2><a href="/educ/phy/o">O' Level Physics</a></h2>
+							<p>The Ordinary Level Physics, the Start of the Journey into the Unknown, Interesting adventure.</p>
+						</div>
+					</div>
+				</div>
+				<div class="columns portfolio-item" title="Principles and Laws of Physics">
+					<div class="item-wrap">
+						<a href="/educ/phy/olevel/laws">
+							<img class="w3-round-jumbo" src="{{url_for('static', filename='images/educ/phy01.jpg')}}" />
+							<div class="overlay"></div>
+							<div class="link-icon"><i class="fa fa-link"></i></div>
+						</a>
+						<div class="portfolio-item-meta">
+							<h2><a href="/educ/phy/olevel/laws">Physics Laws and Principles</a></h2>
+							<p>All the principles of physics for all the levels in one place.
+								This is a great tool for capturing the origins of the physics formulae and other equations in the physics
+								subject.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="columns portfolio-item" title="Definitions of Physics">
+					<div class="item-wrap">
+						<a href="/educ/phy/olevel/definitions">
+							<img class="w3-round-jumbo" src="{{url_for('static', filename='images/educ/physw005.jpg')}}" />
+							<div class="overlay"></div>
+							<div class="link-icon"><i class="fa fa-link"></i></div>
+						</a>
+						<div class="portfolio-item-meta">
+							<h2><a href="/educ/phy/olevel/definitions">Physics Definitions</a></h2>
+							<p>All the definitions and meanings of terms in one place. This provides a better understanding of the
+								terms used in the physics subject hence a fuller understanding of the whole subject.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock educ_content %}

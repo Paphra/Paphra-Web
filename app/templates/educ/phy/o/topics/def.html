@@ -1,0 +1,170 @@
+
+<div id="def">
+    <div class="row">
+	<div class="six columns">
+	    <h2 class="">Physics Definitions</h2>
+
+	    <script type="text/javascript">
+		function subRedir() {
+		    var value = document.getElementById("subListDef").value;
+		    window.location = "?t=phy&tp=Def&sbtp=" + value + "#" + value;
+		}
+
+	    </script>
+	    <nav id="" class="w3-white align-center">
+		<select onchange="subRedir()"
+			id="subListDef" class="w3-input w3-animate-input" >
+		    <option <?php if ($subtopic == 'mec' || $subtopic == '') { ?>
+			selected="true"
+			<?php } ?> title="Click To View" value="mec">Mechanics</option>
+		    <option <?php if ($subtopic == 'lig') { ?>
+    			selected="true"
+			<?php } ?> title="Click To View" value="lig">Light</option>
+		    <option <?php if ($subtopic == 'wav') { ?>
+    			selected="true"
+			<?php } ?> title="Click To View" value="wav">Waves</option>
+		    <option <?php if ($subtopic == 'eel') { ?>
+    			selected="true"
+			<?php } ?> title="Click To View" value="eel">Electricity</option>
+		    <option <?php if ($subtopic == 'hea') { ?>
+    			selected="true"
+			<?php } ?> title="Click To View" value="hea">Heat</option>
+		    <option <?php if ($subtopic == 'mod') { ?>
+    			selected="true"
+			<?php } ?> title="Click To View" value="mod">Modern Physics</option>
+
+		    <option <?php if ($subtopic == 'mag') { ?>
+    			selected="true"
+			<?php } ?> title="Click To View" value="mag">Magnetism</option>
+
+		</select>
+	    </nav>
+
+	</div>
+	<div class="six columns">
+	</div>
+    </div>
+    <div class="row">
+	<div class="twelve columns">
+	    <div class="row w3-round-jumbo" class="mainHeading">
+		<div class="seven columns">
+		    <p id="<?php print $subtopic; ?>"></p>
+		    <h2 id="mainHeading" class="w3-round-jumbo">
+			<?php print $subtp; ?> Definitions
+		    </h2>
+		</div>
+		<div class="five columns align-center">
+		    <form action="?t=phy&tp=Def&sbtp=<?php echo $subtopic; ?>#search_results" onsubmit="search_def($subtp)" method="post" class="align-center">
+			<div class="three columns align-center">
+			    <input type="text" placeholder="Search <?php echo $subtp; ?> Definitions" minlength="3" required="true"
+				   onkeyup="" name="search_text" class="w3-animate-input w3-round-jumbo align-center" autocomplete="true"/>
+			    <div id="search_results" class="w3-table-all">
+			    </div>
+			</div>
+			<div class="two columns align-center">
+			    <button type="submit" name="def_search" class="w3-round-jumbo align-center"><span class="fa fa-search"></span></button>
+			</div>
+		    </form>
+		</div>
+
+	    </div>
+	    <?php
+	    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["def_search"])) {
+		?>
+    	    <div class="row w3-lime" id="search_results">
+    		<hr/>
+    		<div class="twelve columns" id="search_row">
+    		    <fieldset>
+			    <?php
+			    $search_text = $_POST["search_text"];
+
+			    $connection = new mysqli($host, $username, $password, $db_name);
+			    if ($connection->connect_error) {
+				die("Connection to the Database Failed!");
+			    } else {
+				$query = "SELECT * FROM phy_definitions WHERE topic='$subtp'";
+				$result = $connection->query($query);
+				if ($result->num_rows > 0) {
+				    echo "<h4>Search Results for: '$search_text'</h4><hr/>";
+				    echo "<ul id='listRm'>";
+				    $text = "";
+				    while ($row = $result->fetch_assoc()) {
+					if (stristr($row["term"], strtolower($search_text), 0) != FALSE) {
+					    $text .= "<li><b>" . $row["term"] . ":</b><br/> " . $row["definition"] . "</li>";
+					}
+				    }
+				    if ($text != "") {
+					echo $text;
+				    } else {
+					echo "<p class='w3-padding-left w3-text-red'>No Match Found for '$search_text'!</p>";
+				    }
+				    echo "</ul>";
+				} else {
+				    echo "<p>Sorry, No Match Found!</p>";
+				}
+			    }
+			    $result->close();
+			    $connection->close();
+			    ?>
+    		    </fieldset>
+    		</div>
+    		<hr/>
+    	    </div>
+		<?php
+	    }
+	    ?>
+	    <hr/>
+
+	    <div class="row">
+		<div class="twelve columns">
+		    <ul id="listNum">
+
+			<?php
+			$conn = new mysqli($host, $username, $password, $db_name);
+			if ($conn->connect_error) {
+			    die("Not Connected!");
+			} else {
+			    $query = "SELECT * FROM phy_definitions WHERE topic='$subtp'";
+			    $result = $conn->query($query);
+			    if ($result->num_rows > 0) {
+				while ($row = $result->fetch_assoc()) {
+				    echo "<li><h4>" . $row["term"] . "</h4><p>" . $row["definition"] . "</p><br/></li>";
+				}
+			    } else {
+				echo("No Definitions Found!");
+			    }
+			}
+			$result->close();
+			$conn->close();
+			?>
+		    </ul>
+		</div>
+		<br/><br/>
+	    </div>
+	    <hr/>
+	    <div id="endOfChapter">
+		END of <?php print $subtp; ?> DEFINITIONS
+	    </div>
+	    <hr/>
+	    <div class="row">
+		<div class="six columns pull-left">
+		    <a href="?t=phy&tp=Def&sbtp=<?php echo $prevsbtp; ?>#<?php echo $prevsbtp; ?>"
+		       class="button special pull-left" id="<?php
+		       if ($prevsbtp == '') {
+			   echo "hidden1";
+		       }
+		       ?>">Previous<span class="glyphicon glyphicon-chevron-left"></span></a>
+		</div>
+		<div class="six columns pull-right">
+		    <a href="?t=phy&tp=Def&sbtp=<?php echo $nextsbtp; ?>#<?php echo $nextsbtp; ?>"
+		       class="button special pull-right" id="<?php
+		       if ($nextsbtp == '') {
+			   echo "hidden1";
+		       }
+		       ?>">NEXT<span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+	    </div>
+
+	</div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+
+<div id="law">
+    <div class="row"  class="mainHeading">
+	<div class="seven columns">
+	    <h2 id="mainHeading" class="w3-round-jumbo">
+		Physics Laws And Principles
+	    </h2>
+	</div>
+
+	<div class="five columns align-center">
+	    <form action="?t=phy&tp=Law#search_results" method="post" class="align-center">
+		<div class="three columns align-center">
+		    <input type="text" placeholder="Search Physics Laws" minlength="3" required="true"
+			   onkeyup="" name="search_text" class="w3-animate-input w3-round-jumbo align-center" autocomplete="true"/>
+		    <div id="search_results" class="w3-table-all">
+		    </div>
+		</div>
+		<div class="two columns align-center">
+		    <button type="submit" name="laws_search" class="w3-round-jumbo align-center"><span class="fa fa-search"></span></button>
+		</div>
+	    </form>
+	</div>
+
+    </div>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["laws_search"])) {
+	?>
+        <div class="row w3-lime" id="search_results">
+    	<hr/>
+    	<div class="twelve columns" id="search_row">
+    	    <fieldset>
+		    <?php
+		    $search_text = $_POST["search_text"];
+
+		    $connection = new mysqli($host, $username, $password, $db_name);
+		    if ($connection->connect_error) {
+			die("Connection to the Database Failed!");
+		    } else {
+			$query = "SELECT * FROM phy_laws";
+			$result = $connection->query($query);
+			if ($result->num_rows > 0) {
+			    echo "<h4>Search Results for: '$search_text'</h4><hr/>";
+			    echo "<ul id='listRm'>";
+			    $text = "";
+			    while ($row = $result->fetch_assoc()) {
+				if (stristr($row["law"], strtolower($search_text), 0) != FALSE) {
+				    $text .= "<li><b>" . $row["law"] . ":</b><br/> " . $row["statement"] . "</li>";
+				}
+			    }
+			    if ($text != "") {
+				echo $text;
+			    } else {
+				echo "<p class='w3-padding-left w3-text-red'>No Match Found for '$search_text'!</p>";
+			    }
+			    echo "</ul>";
+			} else {
+			    echo "<p>Sorry, No Match Found!</p>";
+			}
+		    }
+		    $result->close();
+		    $connection->close();
+		    ?>
+    	    </fieldset>
+    	</div>
+    	<hr/>
+        </div>
+	<?php
+    }
+    ?>
+
+    <div class="row">
+	<div class="twelve columns">
+	    <ul id="listNum">
+		<?php
+		$host = "localhost";
+		$uname = "1053636";
+		$upass = "..paphra..";
+		$conn = new mysqli($host, $uname, $upass, $uname);
+		if ($conn->connect_error) {
+		    die("");
+		}
+		$sql = "SELECT * FROM phy_laws";
+		$result = $conn->query($sql);
+		if ($result->num_rows > 0) {
+		    while ($row = $result->fetch_assoc()) {
+			echo "<li><h5>" . $row['law'] . "</h5><p>" . $row['statement'] . "</p><br/></li>";
+		    }
+		} else {
+
+		}
+		?>
+	    </ul>
+	</div>
+    </div>
+</div>
+<hr/>
+<div id="endOfChapter">
+    END of Physics Laws
+</div>
+<hr/>
+
+</div>
+</div>
+

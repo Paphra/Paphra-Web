@@ -1,0 +1,932 @@
+<section id="wpe" class="">
+	<h2 id="mainHeading" class="mainHeading w3-card-24 w3-medium">
+		<a href="#work">Work</a>
+		<a href="#power">Power</a>
+		And
+		<a href="#energy">Energy</a>
+		-
+		<a href="#exercise">Exercise</a>
+	</h2>
+	<hr />
+
+	<div class="row" id="work">
+		<div class="twelve columns">
+			<h3>WORK</h3>
+			<b>Definition:</b>
+			<p>
+				This is the product of force and distance moved in the direction of force.
+				<b>OR</b>
+				Work is done when the point of application of force moves in the direction of force.
+				The SI Unit of work is a joule (J).
+				<b id="term_joule">A Joule </b> is the work done when a force of 1N moves through a distance of 1m in the direction
+				of force.
+			</p>
+
+			<div class="w3-table-all">
+				<table>
+					<?php
+		    equals_tr_td("Workdone", "Force x Distance moved in the direction of Force");
+		    ans_tr_td("", "F x d");
+		    ?>
+				</table>
+			</div>
+			<p>
+				If the body is projected vertically, the force acting is the weight of the body.
+			</p>
+			<hr />
+
+			<div class="w3-table-all">
+				<table>
+					<?php
+		    equals_tr_td("Workdone", "F x d");
+		    tr_td_left3("But;");
+		    equals_tr_td("F", "mg");
+		    tr_td_left3("Therefore;");
+		    ans_tr_td("Workdone", "mgd");
+		    ?>
+				</table>
+			</div>
+			<hr />
+
+			<h6>Examples;</h6>
+			<div class="row s-bgrid-halves bgrid-thirds">
+				<div class="column">
+					<p>
+						1. An object is pulled through a distance of 2m by a force of 55N. Calculate the work done.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<?php
+			    equals_tr_td("Workdone", "F x d");
+			    equals_tr_td("", "55 x 2");
+			    ans_tr_td("", "110J");
+			    ?>
+						</table>
+					</div>
+					<hr />
+				</div>
+
+				<div class="column">
+					<p>
+						2. An object is pulled through a distance of 20cm by a force of 1500N. Calculate the work done.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<?php
+			    equals_tr_td("Workdone", "F x d");
+			    equals_tr_td("", "1500 x 0.2");
+			    ans_tr_td("", "300J");
+			    ?>
+						</table>
+					</div>
+					<hr />
+				</div>
+				<div class="column">
+					<p>
+						3. An Object of mass 500g moves through a vertical height of 40cm. Calculate the work done.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<?php
+			    equals_tr_td("Workdone", "F x d");
+			    equals_tr_td("", "mgd");
+			    equals_tr_td("", "0.500 x 10 x 0.4");
+			    ans_tr_td("", "2J");
+			    ?>
+						</table>
+					</div>
+					<hr />
+				</div>
+
+				<div class="column">
+					<p>
+						4. A body of mass 250g climbs 25 steps each of height 20cm. Calculate the work done.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<?php
+			    equals_tr_td("Workdone", "F x d");
+			    equals_tr_td("", "mgd");
+			    equals_tr_td("", "0.250 x 10 x 0.2 x 25");
+			    ans_tr_td("", "12.5J");
+			    ?>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr />
+
+	<div class="row" id="power">
+		<div class="twelve columns">
+			<h3>POWER</h3>
+			<b>Definition;</b>
+			<p>
+				This is the rate of doing work.
+			</p>
+			<hr />
+			<div class="">
+				<table>
+					<?php
+		    fraction_equals_tr_td("Power", "Workdone", "Time Taken");
+		    tr_td_left3("But;");
+		    equals_tr_td("Workdone", "Force x Distance");
+		    tr_td_left3("Then;");
+		    fraction_equals_tr_td("Power", "Force x Distance", "Time Taken");
+		    ans_tr_td("", "Force x Velocity");
+		    ?>
+				</table>
+			</div>
+			<p>
+				The SI Unit of power is a watt (W).
+				<b id="watt">A watt </b> is the rate of working of one joule per second.
+				Hence 1W = 1Js<sup>-1</sup>
+				Other unnits of power include kilowatt (kW) and megawatt (MW).<br />
+				1kW = 1,000W<br />
+				1MW = 1,000,000W
+			</p>
+
+			<b>Examples;</b>
+			<div class="row s-bgrid-halves bgrid-thirds">
+				<div class="column">
+					<p>
+						1. An engine raises 20kg of water through a height of 50m in 5 seconds. Calculate the power of the engine.
+					</p>
+					<div class="">
+						<table>
+							<?php
+			    fraction_equals_tr_td("Power", "Workdone", "Time Taken");
+			    fraction_equals_tr_td("", "F x d", "t");
+			    fraction_equals_tr_td("", "mg x h", "t");
+			    fraction_equals_tr_td("", "2 x 10 x 50", "5");
+			    ans_tr_td("", "200W");
+			    ?>
+						</table>
+					</div>
+					<hr />
+				</div>
+				<div class="column">
+					<p>
+						2. What is the power of the crane which can lift a box of mass 1000kg vertically through a height of 15m in 40
+						seconds?
+					</p>
+					<div class="">
+						<table>
+							<?php
+			    fraction_equals_tr_td("Power", "Workdone", "Time Taken");
+			    fraction_equals_tr_td("", "F x d", "t");
+			    fraction_equals_tr_td("", "mg x h", "t");
+			    fraction_equals_tr_td("", "1000 x 10 x 15", "40");
+			    ans_tr_td("", "3750W");
+			    ?>
+						</table>
+					</div>
+					<hr />
+				</div>
+				<div class="column">
+					<p>
+						3. A boy whose mass is 60kg can run up a flight of 28 steps ech of 25cm high in 56 seconds. Calculate the power
+						developed by the boy.
+					</p>
+					<div class="">
+						<table>
+							<?php
+			    fraction_equals_tr_td("Power", "Workdone", "Time Taken");
+			    fraction_equals_tr_td("", "F x d", "t");
+			    fraction_equals_tr_td("", "mg x h", "t");
+			    fraction_equals_tr_td("", "60 x 10 x (28 x 0.25)", "56");
+			    ans_tr_td("", "75W");
+			    ?>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr />
+
+	<div class="row" id="energy">
+		<div class="twelve columns">
+			<h3>ENERGY</h3>
+			<b>Definition:</b>
+			<p>
+				This isthe ability to do work.
+				The SI Unit of energy is joule (J).
+			</p>
+			<hr />
+
+			<h4>Forms of Energy:</h4>
+			<nums>
+				<ul>
+					<li>
+						<b>Heat Energy</b>
+						<p>
+							This is the form of energy that is transfered from a region of high temperature to a region of low temperature.
+							This form of energy is produced by burning fuels, electric heaters and radiation from the sun.
+						</p>
+					</li>
+					<li>
+						<b>Sound Energy</b>
+						<p>
+							This is a form of energy produced when particles in the medium are set into vibrations.
+							This form of energy is heard by the ear. It travels in forms of waves.
+						</p>
+					</li>
+					<li>
+						<b>Electrical Energy</b>
+						<p>
+							This is a form of energy developed due to the flow of charges.
+							This form of energy can be obtained by the conversion of other forms of energy using generators.
+						</p>
+					</li>
+					<li>
+						<b>Light Energy</b>
+						<p>
+							This is the form of energy produced by hot bodies and travels in a straight line.
+							This form of energy can be converted into other forms of energy and helps us to see.
+						</p>
+					</li>
+					<li>
+						<b>Chemical Energy</b>
+						<p>
+							This is a form of energy that can be converted to heat by burning.
+						</p>
+					</li>
+					<li>
+						<b>Nuclear Energy</b>
+						<p>
+							This is a form of energy produced when unstable nucleus splits through nuclear fission or two light nuclei
+							fuse together through nuclear fusion.
+						</p>
+					</li>
+					<li>
+						<b>Wave Energy</b>
+						<p>
+							This is a form of energy which is transfered from one point to another without causing any permanent
+							displacement of medium itself.
+							This form of energy causes a disturbance through the medium.
+						</p>
+					</li>
+				</ul>
+			</nums>
+			<hr />
+
+			<h4>Sources of Energy:</h4>
+			<nums>
+				<ul>
+					<li>
+						<b>The Sun.</b>
+						<p>
+							The sun produces light energy and heat energy which are used in different ways.
+						</p>
+					</li>
+					<li>
+						<b>Wind.</b>
+						<p>
+							Wind is moving air which can drive turbines to produce electrical energy.
+						</p>
+					</li>
+					<li>
+						<b>Fuel.</b>
+						<p>
+							Fuels like kerosene and petroleum when burnt produces heat energy and light energy which can be used in
+							different
+							ways.
+						</p>
+					</li>
+					<li>
+						<b>Geothermal.</b>
+						<p>
+							Geothermal is a source of electrical energy in power stations.
+						</p>
+					</li>
+					<li>
+						<b>Waterfalls or Dams.</b>
+						<p>
+							Waterfalls may be used to turn turbines in hydro-electric power stations.
+						</p>
+					</li>
+					<li>
+						<b>Nuclear.</b>
+						<p>
+							When unstable nucleus splits, nuclear energy is released.
+						</p>
+					</li>
+					<li>
+						<b>Oceans.</b>
+						<p>
+							Ocean currents can be converted into other forms of energy like electrical energy.
+						</p>
+					</li>
+				</ul>
+			</nums>
+			<hr />
+
+			<h4 id="renewable_sources_of_energy">Renewable (Non-Exhaustible) sources of energy:</h4>
+			<p>
+				These are sources of energy which can be re-used to produce energy. Examples are wind, sun(solar), water
+				(hydro-electric).
+			</p>
+			<hr />
+			<h4 id="nonrenewable_sources_of_energy">Non-Renewable (Exhaustible) sources of energy:</h4>
+			<p>
+				These are sources of energy which cannot be re-used to produce energy. Examples are kerosene, petroleum, coal, and
+				biogas.
+			</p>
+			<hr />
+
+			<h3 id="mechanical_energy">MECHANICAL ENERGY</h3>
+			<p>
+				This is divided into two forms of energy, namely;
+			</p>
+			<nums>
+				<ul>
+					<li>Kinetic Energy.</li>
+					<li>Potential Energy.</li>
+				</ul>
+			</nums>
+			<hr />
+			<h5 id="keinetic_energy">Kinetic Energy.</h5>
+			<p>
+				This is the energy possessed by a body due to it's motion. It depends on the speed of the body.
+			</p>
+			<hr />
+			<div class="w3-table-all">
+				<table>
+					<tr>
+						<td>Kinetic Energy</td>
+						<td>=</td>
+						<td>&frac12; x mass x (velocity)<sup>2</sup></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>=</td>
+						<td>&frac12;mv<sup>2</sup></td>
+					</tr>
+				</table>
+			</div>
+			<hr />
+			<b>Examples;</b>
+			<div class="row s-bgrid-halves">
+				<div class="column">
+					<p>
+						1. A body of mass 3kg moves with a speed of 30ms<sup>-1</sup>. Find it's kinetic energy.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>K.E</td>
+								<td>=</td>
+								<td>&frac12;mv<sup>2</sup></td>
+								<td rowspan="5"></td>
+								<td rowspan="5"></td>
+								<td rowspan="5"></td>
+							</tr>
+							<tr>
+								<td rowspan="4"></td>
+								<td>=</td>
+								<td>&frac12; x 3 x 30<sup>2</sup></td>
+							</tr>
+							<tr>
+								<td>=</td>
+								<td>&frac12; x 3 x 900</td>
+							</tr>
+							<tr>
+								<td>=</td>
+								<td>&frac12; x 2700</td>
+							</tr>
+							<tr>
+								<td>=</td>
+								<td><u>1350J</u></td>
+							</tr>
+						</table>
+					</div>
+					<hr />
+				</div>
+				<div class="column">
+					<p>
+						2. An Object of volume 100cm<sup>3</sup> and density 8gcm<sup>-3</sup> moves with a speed of 10ms<sup>-1</sup>.
+						Find its kinetic energy.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>K.E</td>
+								<td>=</td>
+								<td>&frac12;mv<sup>2</sup></td>
+								<td rowspan="8"></td>
+								<td rowspan="8"></td>
+								<td rowspan="8"></td>
+							</tr>
+							<tr>
+								<td>m</td>
+								<td>=</td>
+								<td>&rho; x v</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>=</td>
+								<td>8 x 100</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>=</td>
+								<td><u>800g</u></td>
+							</tr>
+							<tr>
+								<td>K.E</td>
+								<td>=</td>
+								<td>&frac12; x 0.8 x 10<sup>2</sup></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>=</td>
+								<td>&frac12; x 0.8 x 100</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>=</td>
+								<td>&frac12; x 80</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>=</td>
+								<td><u>40J</u></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<h4 id="potential_energy">Potential Energy</h4>
+			<p>
+				This is the energy possessed by a body by virtue of it's position in the gravitational field.
+			</p>
+			<div class="w3-table-all">
+				<table>
+					<tr>
+						<td>Potential Energy</td>
+						<td>=</td>
+						<td>mass x Acceleration due to gravity x height</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>=</td>
+						<td>mgh</td>
+					</tr>
+				</table>
+			</div>
+			<hr />
+
+			<b>Examples;</b>
+			<div class="row s-bgrid-halves">
+				<div class="column">
+					<p>
+						1. Find the potential energy possessed by a body of mass 350g when it is 10m above the ground.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>P.E</td>
+								<td>=</td>
+								<td>mgh</td>
+							</tr>
+							<tr>
+								<td rowspan="2"></td>
+								<td>=</td>
+								<td>0.35 x 10 x 10</td>
+							</tr>
+							<tr>
+								<td>=</td>
+								<td><u>35J</u></td>
+							</tr>
+						</table>
+					</div>
+					<hr />
+				</div>
+
+				<div class="column">
+					<p>
+						2. A 5kg mass falls from a height of 20m. Calculate the potential energy lost.
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>P.E</td>
+								<td>=</td>
+								<td>mgh</td>
+							</tr>
+							<tr>
+								<td rowspan="2"></td>
+								<td>=</td>
+								<td>5 x 10 x 20</td>
+							</tr>
+							<tr>
+								<td>=</td>
+								<td><u>100J</u></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<hr />
+
+			<h4 id="law_of_conservation_of_energy">The Law/principle of Conservation of Energy</h4>
+			<p>
+				It states that energy can neither be created nor destroyed but changes from one form to another.
+			</p>
+			<hr />
+
+			<h4>Energy Changes:</h4>
+			<div class="row s-bgrid-halves">
+				<div class="eight columns">
+					<p>
+						<b>1. For a body falling freely, the following energy changes take place;</b><br />
+						P.E <span class="glyphicon glyphicon-arrow-right"></span> P.E + K.E <span class="glyphicon glyphicon-arrow-right"></span><br />
+						K.E <span class="glyphicon glyphicon-arrow-right"></span> Sound + heat.
+					</p>
+				</div>
+				<div class="four columns">
+					<img src="/phy/olevel/topics/mec/images/wpe/fallingBody.jpg" alt="Falling body." onclick="showImage('/phy/olevel/topics/mec/images/wpe/fallingBody.jpg')" />
+				</div>
+			</div>
+			<hr />
+			<div class="row s-bgrid-halves">
+				<div class="eight columns">
+					<p>
+						<b>2. For a freely swinging pendulum, the energy changes are;</b><br />
+						P.E <span class="glyphicon glyphicon-arrow-right"></span> P.E + K.E <span class="glyphicon glyphicon-arrow-right"></span><br />
+						K.E <span class="glyphicon glyphicon-arrow-right"></span> P.E + K.E <span class="glyphicon glyphicon-arrow-right"></span>
+						P.E
+					</p>
+				</div>
+				<div class="four columns">
+					<img src="/phy/olevel/topics/mec/images/wpe/swingingPendulum.jpg" alt="Swinging Pendulum." onclick="showImage('/phy/olevel/topics/mec/images/wpe/swingingPendulum.jpg')" />
+				</div>
+			</div>
+			<hr />
+
+			<p>
+				<b>3. When lighting a match box;</b><br />
+				Chemical energy <span class="glyphicon glyphicon-arrow-right"></span> Heat + Light.
+			</p>
+			<hr />
+
+			<p>
+				<b>4. When a boy compresses the spring;</b><br />
+				Mechanical energy <span class="glyphicon glyphicon-arrow-right"></span> Elastic Potential Energy.
+			</p>
+			<hr />
+
+			<p>
+				<b>5. When lighting a lamp connected to a battery;</b><br />
+				Chemical energy <span class="glyphicon glyphicon-arrow-right"></span> Electrical energy <span class="glyphicon glyphicon-arrow-right"></span>
+				Heat + Light.
+			</p>
+			<hr />
+
+			<p>
+				<b>6. Catapult Pulled by a person to propel a stone;</b><br />
+				Mechanical energy <span class="glyphicon glyphicon-arrow-right"></span> Electrical Potential energy <span class="glyphicon glyphicon-arrow-right"></span>
+				Kinetic Energy.
+			</p>
+			<hr />
+
+			<b>NB:</b>
+			<p>
+				The following devices can be used to carry out the following energy changes;
+			</p>
+			<hr />
+			<div class="w3-table-all">
+				<table>
+					<thead class="w3-center align-center">
+						<th class="w3-center align-center">Energy Change</th>
+						<th class="w3-center align-center">Device</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Electrical Energy to Mechanical Energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Motor</td>
+						</tr>
+						<tr>
+							<td>Mechanical Energy to Electrical Energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Dynamo</td>
+						</tr>
+						<tr>
+							<td>Electrical Energy to sound energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Loudspeaker</td>
+						</tr>
+						<tr>
+							<td>Sound energy to Electrical Energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Microphone</td>
+						</tr>
+						<tr>
+							<td>Heat energy to electrical Energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Thermopile</td>
+						</tr>
+						<tr>
+							<td>Electrical Energy to heat energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Electrical Heater</td>
+						</tr>
+						<tr>
+							<td>Electrical Energy to light energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Electric Lamp</td>
+						</tr>
+						<tr>
+							<td>Light Energy to Electrical Energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Photocells</td>
+						</tr>
+						<tr>
+							<td>Chemical Energy to Electrical energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Cell</td>
+						</tr>
+						<tr>
+							<td>Electrical energy to Chemical Energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Battery charging</td>
+						</tr>
+						<tr>
+							<td>Nuclear energy to heat energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Nuclear reactor</td>
+						</tr>
+						<tr>
+							<td>Electromagnetic Energy to electrical energy</td>
+							<td> <span class="glyphicon glyphicon-arrow-right"></span> </td>
+							<td>Ariel</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3">
+								<b>Note:</b>
+								<p>
+									For a body falling freely, its kinetic energy before impact is equal to potential energy above the ground.
+								</p>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<hr />
+
+			<b>Examples;</b>
+			<div class="row s-bgrid-halves">
+				<div class="column">
+					<p>
+						1. A 200g body falls from a height of 0.2m. Find the kinetic energy just before it hits the ground.
+						<br /><b>Solution:</b>
+					</p>
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>K.E gained</td>
+								<td>=</td>
+								<td>P.E lost</td>
+								<td rowspan="4"></td>
+								<td rowspan="4"></td>
+								<td rowspan="4"></td>
+							</tr>
+							<tr>
+								<td rowspan="3"></td>
+								<td>=</td>
+								<td>mgh</td>
+							</tr>
+							<tr>
+								<td>=</td>
+								<td>0.2 x 10 x 0.2</td>
+							</tr>
+							<tr>
+								<td>=</td>
+								<td><u>0.4J</u></td>
+							</tr>
+						</table>
+					</div>
+					<hr />
+				</div>
+				<div class="column">
+					<p>
+						2. A block of mass 2kg falls freely from rest through a height of 20m above the ground. Find;
+					</p>
+					<ul class="w3-margin-left w3-padding-left" class="w3-margin-left w3-padding-left" id="listRm">
+						<li>The potential energy of the block above the ground.</li>
+						<li>The velocity with which the block hits the ground.</li>
+					</ul>
+					<hr />
+					<b>Solution:</b>
+					<div class="row s-bgrid-halves">
+						<div class="column">
+							i)
+							<div class="w3-table-all">
+								<table>
+									<tr>
+										<td>P.E</td>
+										<td>=</td>
+										<td>mgh</td>
+										<td rowspan="3"></td>
+										<td rowspan="3"></td>
+										<td rowspan="3"></td>
+									</tr>
+									<tr>
+										<td rowspan="2"></td>
+										<td>=</td>
+										<td>2 x 10 x 20</td>
+									</tr>
+									<tr>
+										<td>=</td>
+										<td><u>400J</u></td>
+									</tr>
+								</table>
+							</div>
+							<hr />
+						</div>
+						<div class="column">
+							ii)
+							<div class="w3-table-all">
+								<table>
+									<tr>
+										<td style="text-align:right;">K.E</td>
+										<td>=</td>
+										<td>P.E</td>
+										<td rowspan="6"></td>
+										<td rowspan="6"></td>
+										<td rowspan="6"></td>
+									</tr>
+									<tr>
+										<td style="text-align:right;">&frac12;mv<sup>2</sup></td>
+										<td>=</td>
+										<td>400</td>
+									</tr>
+									<tr>
+										<td style="text-align:right;">&frac12; x 2 x v<sup>2</sup></td>
+										<td>=</td>
+										<td>400</td>
+									</tr>
+									<tr>
+										<td style="text-align:right;">v<sup>2</sup></td>
+										<td>=</td>
+										<td>400</td>
+									</tr>
+									<tr>
+										<td style="text-align:right;">v</td>
+										<td>=</td>
+										<td>&Sqrt;400</td>
+									</tr>
+									<tr>
+										<td style="text-align:right;">v</td>
+										<td>=</td>
+										<td><u>20 ms<sup>-1</sup></u></td>
+									</tr>
+								</table>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<div class="row" id="exercise">
+		<div class="twelve columns">
+			<h3>Trial Exercise</h3>
+			<p>
+				Where necessary, take acceleration due to gravity, g = 10ms<sup>-2</sup>
+			</p>
+			<hr />
+
+			<nums>
+				<ul>
+					<li>
+						<p>
+							A boy of mass 40kg walks up a flight of 12 steps. If each step is 20cm high, calculate the work done by
+							the boy in climbing up the stairs.<br />
+							<b>Ans. 960J</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							An electric motor raises a 50kg load at a constant velocity. Calculate the power of the motor if it takes
+							40 seconds to raise the load through a height of 24m.<br />
+							<b>Ans. 300W</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							At what average velocity can a motor rated 200W raise a load of mass 40kg?<br />
+							<b>Ans. 0.5 ms<sup>-1</sup></b>
+						</p>
+					</li>
+					<li>
+						<p>
+							An object of mass 2.5kg is released from a height of 5m above the ground. Calculate the velocity of the object
+							just before it strikes the ground. What assumption have you made in your calculations?<br />
+							<b>Ans. 10 ms<sup>-1</sup></b>
+						</p>
+					</li>
+					<li>
+						<p>
+							A boy of mass 45kg develops an average power of 250W when running up a flight of stairs. How long
+							does he take to climb up a vertical height of 4m?<br />
+							<b>Ans. 7.2 Seconds</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							Water falls through a height of 60m at a rate of 1.2 x 10<sup>4</sup> kg per minute. Assuming there are no
+							energy losses, calculate power generated from the base of the water fall.<br />
+							<b>Ans. 120kW</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							A 30g bullet strikes a tree at a speed of 200ms<sup>-1</sup> and leaves it from the opposite side at a speed of
+							100 ms<sup>-1</sup>. Calculate;
+						</p>
+						<ul class="w3-margin-left w3-padding-left" class="w3-margin-left w3-padding-left" id="listRm">
+							<li>The kinetic energy of the bullet just before it strikes the tree.</li>
+							<li>The kinetic energy of the bullet just before it emerges out of the tree.</li>
+						</ul>
+						<p>
+							<b>Ans. (i) 600J |(ii) 150J</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							A boy of mass 50kg runs up-flight of stairs in 2 Seconds. If each step is 0.2m high and there are 60 steps in
+							the
+							flight. Calculate the boy's power.<br />
+							<b>Ans. </b>
+						</p>
+					</li>
+					<li>
+						<p>
+							A crane lifts 4 bricks per minute through a height of 150cm. Find the power that is expended if each brick
+							weighs
+							100N.<br />
+							<b>Ans. 10W</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							A boy pulls a toy car by a string which makes an angle of 30<sup>o</sup> with the horizontal. If the boy applies
+							a force of
+							4.8N and a toy moves through a horizontal distance of 8m. Calculate the work done by the boy;<br />
+							<b>Ans. 19.2J</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							An object of mass 10kg is released at a height of 25m above the ground. Calculate the kinetic energy with which
+							it hits the ground.<br />
+							<b>Ans. 2500J</b>
+						</p>
+					</li>
+					<li>
+						<p>
+							Describe the energy transformations that take place in each of the following;
+						</p>
+						<ul class="w3-margin-left w3-padding-left" class="w3-margin-left w3-padding-left" id="listRm">
+							<li>A car battery is used to light a bulb.</li>
+							<li>Coal is used to generate electricity.</li>
+							<li>Water at the top of water fall falls and its temperature rises on reaching the bottom.</li>
+						</ul>
+					</li>
+					<li>
+						<p>
+							SOmetimes, work is not done even if there is an applied force.
+							Describe some situations when this is so.
+						</p>
+					</li>
+				</ul>
+			</nums>
+		</div>
+	</div>
+	<hr />
+
+	<div id="endOfChapter">
+		END of WORK, POWER and ENERGY
+	</div>
+	<hr />
+	<div class="row bgrid-halves">
+		<div class="column align-left">
+			<a title="Force And Weight" href="?t=phy&tp=Mec&sbtp=faw&f=<?php print $get; ?>#faw" class="button special pull-left"><span
+				 class="glyphicon glyphicon-chevron-left"></span>Previous</a>
+
+		</div>
+		<div class="column align-right">
+			<a title="Pressure" href="?t=phy&tp=Mec&sbtp=pre&f=<?php print $get; ?>#pre" class="button special pull-right">NEXT<span
+				 class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+	</div>
+</section>

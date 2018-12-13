@@ -1,0 +1,520 @@
+<section id="mad" class="">
+	<h2 id="mainHeading" class="mainHeading w3-card-24 w3-medium">
+		<a href="#mass">Mass</a>
+		And
+		<a href="#density">Density</a>
+		-
+		<a href="#exercise">Exercise</a>
+
+	</h2>
+	<hr />
+
+	<div class="row" id="mass">
+		<div class="twelve columns">
+			<h3>Mass</h3>
+			<p>
+				Mass is the quantity of matter contained in a substance.
+				The SI Unit of mass is <b>kg</b>. Other units include
+				<b>gram [g], milligrams [mg], tonnes, </b> etc.</p>
+			<br />
+			<h4>Measuring Mass</h4>
+			<p>
+				The Commonly used instruments for measuring mass include the following;
+			</p>
+			<nums>
+				<ul>
+					<li>Top Balance</li>
+					<li>Beam Balance</li>
+					<li>Lever Balance</li>
+					<li>Weighing scale</li>
+					<li>Spring balance</li>
+				</ul>
+			</nums>
+		</div>
+	</div>
+
+	<div class="row " id="density">
+		<div class="twelve columns">
+			<h3>Density</h3>
+			<p>
+				This is the <b>Mass</b> per unit <b>volume</b> of a substance.
+				The SI unit of density is kilogram per cubic metre <b>[kgm<sup>-3</sup>]</b>.
+				Another commonly used unit is <b>gram per cubic centimeter [gcm<sup>-3</sup>]</b>.
+				The symbol used to represent density is <b>&rho;</b>.
+			</p>
+			<div class="w3-margin-left">
+				<?php fraction_equals_table("Density (&rho;)", "Mass", "Volume"); ?>
+			</div>
+			<hr />
+		</div>
+		<div class="twleve columns">
+			<h4>Examples:</h4>
+			<ul id="listNum">
+				<li>
+					<p>
+						The density of of water is 1gcm<sup>-3</sup>. Express this density in kgm<sup>-3</sup>.
+					</p>
+					<table>
+						<?php
+			fraction_equals_tr_td("Density (&rho;)", "Mass", "Volume");
+			tr_td_colspan3("But");
+			equals_tr_td("Volume", "1 cm<sup>3</sup>");
+			ans_tr_td("", "1x10<sup>-6</sup> m<sup>3</sup>");
+			tr_td_colspan3("And");
+			equals_tr_td("Mass", "1g");
+			ans_tr_td("", "0.001kg");
+			tr_td_colspan3("Therefore:");
+			fraction_equals_tr_td("Density", "0.001", "1x10<sup>-6</sup> m<sup>3</sup>");
+			ans_tr_td("", "1000kgm<sup>-3</sup>");
+			?>
+					</table>
+				</li>
+				<li>
+					<p>
+						The density of mercury is 13.6gcm<sup>-3</sup>. Find the volume of a 2,720g mercury in m<sup>3</sup>.
+					</p>
+					<table>
+						<?php
+			density("tr");
+			equals_tr_td("", "13.6 x 1000kgm<sup>-3</sup>");
+			equals_tr_td("", "13600kgm<sup>-3</sup>");
+			tr_td_left("But");
+			equals_tr_td("Mass", "2,720g");
+			equals_tr_td("", "2.72kg");
+			tr_td_left("Therefore");
+			fraction_equals_tr_td("13,600", "2.72", "V");
+			ans_tr_td("Volume", "0.0002m<sup>3</sup>");
+			?>
+					</table>
+				</li>
+				<li>
+					<p>
+						The mass 25cm<sup>3</sup> of ivory was found to be 0.045kg. Calculate the density of ivory in SI Units.
+					</p>
+
+					<table>
+						<?php
+			density("tr");
+			tr_td_left("But;");
+			equals_tr_td("Volume", "25cm<sup>3</sup>");
+			equals_tr_td("", "25x10<sup>-6</sup> m<sup>3</sup>");
+			tr_td_left("And");
+			equals_tr_td("Mass", "0.045kg");
+			tr_td_left("Therefore;");
+			fraction_equals_tr_td("Density", "0.045", "25x10<sup>-6</sup> m<sup>3</sup>");
+			ans_tr_td("Density", "1800kgm<sup>-3</sup>");
+			?>
+					</table>
+				</li>
+			</ul>
+		</div>
+
+		<hr />
+		<div class="twelve columns">
+			<h4>Factors affecting Density</h4>
+			<p>
+				The following are the factors that affect the density of a substance;
+			</p>
+			<nums>
+				<ul>
+					<li><b>Temperature</b>
+						<p>
+							Density of a substance is inversely proportional to the temperature, that is the hight the Temperature, the
+							lower the Density of the substance and
+							the lower the Temperature, the higher the Density of the substance.
+							This is because, when the temperature increases, the molecules or atoms of the substance expand leading to the
+							increase in the volume of that substance and the lower the
+							higher the volume of the substance, the lower the density since the mass remains constant. When the temperature
+							decreases, the substances molecules or atoms contract
+							hence decreasing the volume of that particular substance, and since the mass remains constant, the Density of
+							that substance increases.
+						</p>
+					</li>
+					<li><b>Pressure</b>
+						<p>
+							Pressure only affects the density of gases. For a fixed mass of gas, density is directly proportional to the
+							pressure. This means that, at a higher pressure, the higher the density of the gas.
+							This is because when the pressure of a mass of a gas is increased, it's volume reduces and since the mass
+							remains constant, the density decreases and when the pressure reduces, the volume of the gase increases and
+							since the mass
+							remains constant, it's density decreases.
+						</p>
+					</li>
+					<li><b>Concentration of Atoms</b>
+						<p>
+							In some materials, atoms are closely packed like in solids, thus a material made of atoms of a lower atomic
+							is heavier than a material made of higher atomic number. This is because, atoms are larger and more spread apart
+							hence a smaller density.
+						</p>
+					</li>
+					<li><b>Change of State</b>
+						<p>
+							When a substance changes state, it's volume changes and since the mass is
+							constant, then the Density of the substance changes.
+						</p>
+					</li>
+				</ul>
+			</nums>
+		</div>
+
+		<hr />
+		<div class="twelve columns">
+			<h4>Note:</h4>
+			<p>
+				Size and shape of the substance do not affect the Density because the arrangement of atoms or molecules inside the
+				object or substance
+				remains the same even if the size and shape are changed since they do not affect the packing of molecules or atoms
+				in the substance.
+			</p>
+		</div>
+
+		<hr />
+		<div class="twelve columns">
+			<h4>Uses of Density</h4>
+			<p>
+				The following are the uses of Density;
+			</p>
+			<nums>
+				<ul>
+					<li>Identifying materials</li>
+					<li>Determining the purity of the material</li>
+					<li>Choosing light gases for filling balloons for different purposes</li>
+					<li>Calculating the volume of any given substance</li>
+				</ul>
+			</nums>
+		</div>
+
+		<hr />
+		<div class="twelve columns">
+			<h4>Measuring Density</h4>
+			<hr />
+			<ul id="listNum">
+				<li>
+					<h5>Using the formula</h5>
+					<p>Measure the mass and the volume of the substance and calculate the density using the formula;</p>
+					<?php
+		    density("tb");
+		    ?>
+					<p>The table below gives densities of some common substances.</p>
+					<div class="w3-table-all">
+						<table>
+							<thead>
+								<th>Substance</th>
+								<th colspan="2">Density</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td>gcm<sup>-3</sup></td>
+									<td>kgm<sup>-3</sup></td>
+								</tr>
+								<tr>
+									<td>Water</td>
+									<td>1.0</td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td>Mercury</td>
+									<td>13.6</td>
+									<td>13600</td>
+								</tr>
+								<tr>
+									<td>Kerosene</td>
+									<td>0.8</td>
+									<td>800</td>
+								</tr>
+								<tr>
+									<td>Hydrogen</td>
+									<td>0.000089</td>
+									<td>0.089</td>
+								</tr>
+								<tr>
+									<td>Glass</td>
+									<td>2.5</td>
+									<td>2500</td>
+								</tr>
+								<tr>
+									<td>Lead</td>
+									<td>11.3</td>
+									<td>11300</td>
+								</tr>
+								<tr>
+									<td>Iron</td>
+									<td>7.86</td>
+									<td>7860</td>
+								</tr>
+								<tr>
+									<td>Ice</td>
+									<td>0.92</td>
+									<td>920</td>
+								</tr>
+								<tr>
+									<td>Silver</td>
+									<td>10.5</td>
+									<td>10500</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li>
+					<h4>Measuring Density of a liquid</h4>
+					<hr />
+					<ul id="listAlpha">
+						<li>
+							<h5>Using a beaker</h5>
+							<b>Procedures</b>
+							<nums>
+								<ul>
+									<li>Measure the mass, m<sub>1</sub> of a clean beaker using a balance.</li>
+									<li>Measure a known volume, V of the liquid using a measuring cylinder and transfer it to the beaker.</li>
+									<li>Measure the mass, m<sub>2</sub> of the beaker with the liquid.</li>
+									<li>Calculate the mass of the liquid, m using; m = m<sub>2</sub>-m<sub>1</sub></li>
+									<li>The density of the liquid is then calculated from the expression;</li>
+								</ul>
+							</nums>
+							<table>
+								<?php
+			    density("tr");
+			    fraction_equals_tr_td("", "(m<sub>2</sub>-m<sub>1</sub>)", "V");
+			    ?>
+							</table>
+						<li>
+							<h5>Using a Density Bottle</h5>
+
+							<div class="eight columns">
+								<h6>Procedures</h6>
+								<nums>
+									<ul>
+										<li>Measure the mass, m<sub>1</sub> of a clean density bottle with a stopper</li>
+										<li>Fill the density bottle with water and replace the stopper</li>
+										<li>Measure the mass, m<sub>2</sub> of the density bottle with the water.</li>
+										<li>Calculate the mass of the water, <br />
+											m<sub>w</sub> = m<sub>2</sub>-m<sub>1</sub></li>
+										<li>Determine the Volume of the water which is equal to the volume of the density bottle = m<sub>2</sub>-m<sub>1</sub>
+											since
+											the density of water is 1gcm<sup>-3</sup></li>
+										<li>Fill the density bottle with the liquid and replace the stopper.</li>
+										<li>Measure the mass, m<sub>3</sub> of the density bottle with the liquid.</li>
+										<li>Calculate the mass of the liquid<br />
+											m<sub>l</sub> = m<sub>3</sub>-m<sub>1</sub></li>
+										<li>Calculate the density of the liquid from the expression;</li>
+									</ul>
+								</nums>
+
+								<table>
+									<?php
+				    density("tr");
+				    fraction_equals_tr_td("", "(m<sub>3</sub>-m<sub>l</sub>)", "(m<sub>2</sub>-m<sub>1</sub>)");
+				    ?>
+								</table>
+							</div>
+							<div class="four columns">
+								<img onclick="showImage('/phy/olevel/topics/mec/images/den/densityBottle.jpg')" src="/phy/olevel/topics/mec/images/den/densityBottle.jpg"
+								 width="100%" title="Density Bottle" alt="Density Bottle" />
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<hr />
+		<div class="twelve columns">
+			<h4>Note:</h4>
+			<p>
+				Measuring the density of an irregular object like a stone is almost the same as Determining the
+				volume of an irregular object;
+				That is;
+			</p>
+			<nums>
+				<ul>
+					<li>Using a Eureka Can</li>
+					<li>Using a measuring cylinder</li>
+					<li>Using a density bottle</li>
+				</ul>
+			</nums>
+			<p>
+				Obtaining the volume of the Irregular object.
+				Measuring the mass of the irregular object and then calculating the Density using the expression;
+			</p>
+			<div class="w3-table-all">
+				<?php
+		density("tb");
+		?>
+			</div>
+		</div>
+		<hr />
+		<div class="twelve columns">
+			<h3>Density Of Mixtures</h3>
+
+			<p>A mixture is obtained by putting together tow or more substances that do not react with one another.
+				The density of the mixture depends on the masses of it's constituent substances and their proportions.
+				The <b>volume</b> of the mixture is the sum of the volumes of the individual
+				constituents and <b>mass</b> of the mixture is the sum of the masses of the substances.
+			</p>
+
+			<?php
+	    fraction_equals_table("Density", "Mass Of Mixture", "Volume Of Mixture");
+	    ?>
+		</div>
+		<hr />
+		<div class="twelve columns">
+			<h4 id="examples">Examples:</h4>
+			<ul id="listNum">
+				<li>
+					<p>
+						100cm<sup>3</sup> of fresh water of density 1.0gcm<sup>-3</sup> is mixed with 100cm<sup>3</sup> sea water
+						of Density 1.03gcm<sup>-3</sup>. Calculate the Density of the mixture.
+					</p>
+					<h5>Solution:</h5>
+					<table>
+						<?php
+			fraction_equals_tr_td("Density", "Mass Of Mixture", "Volume Of Mixture");
+			fraction_equals_tr_td("", "(M<sub>1</sub> + M<sub>2</sub>)", "(V<sub>1</sub> + V<sub>2</sub>)");
+			tr_td_left("But");
+			equals_tr_td("Mass Of Mixture", "M<sub>1</sub> + M<sub>2</sub>");
+			tr_td_left("And");
+			equals_tr_td("M<sub>1</sub>", "&rho;<sub>1</sub> x V<sub>1</sub>");
+			equals_tr_td("M<sub>2</sub>", "&rho;<sub>2</sub> x V<sub>2</sub>");
+			tr_td_left("Therefore");
+			equals_tr_td("M<sub>1</sub>", "100 x 1 = 100g");
+			equals_tr_td("M<sub>2M</sub>", "1.03 x 100 = 103g");
+			tr_td_left("This Brings us to;");
+			fraction_equals_tr_td("Density of Mixtures", "100 + 103", "100 + 100");
+			fraction_equals_tr_td("", "203", "200");
+			ans_tr_td("", "1.015gcm<sup>-3</sup>");
+			?>
+					</table>
+				</li>
+				<li>
+					<p>
+						0.4m<sup>3</sup> of Liquid Y and of density 900kgm<sup>-3</sup> is mixed with 0.35m<sup>3</sup> of Liquid Z and
+						of Density
+						800kgm<sup>-3</sup>. Calculate the Density of the mixture.
+
+					</p>
+					<h5>Solution</h5>
+
+					<table>
+						<?php
+			fraction_equals_tr_td("Density", "Mass Of Mixture", "Volume Of Mixture");
+			fraction_equals_tr_td("", "(M<sub>1</sub> + M<sub>2</sub>)", "(V<sub>1</sub> + V<sub>2</sub>)");
+			tr_td_left("But");
+			equals_tr_td("Mass Of Mixture", "M<sub>1</sub> + M<sub>2</sub>");
+			tr_td_left("And");
+			equals_tr_td("M<sub>1</sub>", "&rho;<sub>1</sub> x V<sub>1</sub>");
+			equals_tr_td("M<sub>2</sub>", "&rho;<sub>2</sub> x V<sub>2</sub>");
+			tr_td_left("Therefore");
+			equals_tr_td("M<sub>1</sub>", "0.4 x 900 = 360kg");
+			equals_tr_td("M<sub>2</sub>", "0.35 x 800 = 280kg");
+			tr_td_left("This Brings us to;");
+			fraction_equals_tr_td("Density of Mixtures", "360 + 280", "0.4 + 0.35");
+			fraction_equals_tr_td("", "600", "0.75");
+			ans_tr_td("", "853 kgm<sup>-3</sup>");
+			?>
+					</table>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="twelve columns">
+			<h3 id="relative_density">Relative Density.</h3>
+			<h4>Definition:</h4>
+			<p>This is the ratio of the Density of a substance to the density of water.</p>
+			<table>
+				<?php
+		fraction_equals_tr_td("R.D", "Density Of Substance", "Density Of Water");
+		fraction_equals_tr_td("", "Mass Of Substance", "Mass of An Equal Volume Of Water");
+		fraction_equals_tr_td("", "weight Of Substance", "Weight of An Equal Volume Of Water");
+		?>
+			</table>
+			<div class="w3-teal w3-padding">
+				<p>
+					Relative Density has no Units because it is a ratio of the Similar Quantities.
+				</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+
+	<div class="row " id="exercise">
+		<div class="twelve columns">
+			<h2>Trial Exercise</h2>
+			<p>
+				Where necessary, take acceleration Due to gravity, g = 10ms<sup>-2</sup>
+			</p>
+		</div>
+		<div class="twelve columns">
+			<nums>
+				<ul>
+					<li>
+						What Mass of Lead of Density 11,300kgm<sup>-3</sup> has the same volume as 16kg of Alcohol of density 800kgm<sup>-3</sup>
+						<br /><b>Ans. 226kg</b>
+					</li>
+					<li>
+						An Empty density bottle has a mass of 17.5g. When full of water, its mass is 37.5g. When full of a liquid X, its
+						mass is 35g.
+						If the density of water is 1000kgm<sup>-3</sup>, Find the density of the Liquid X.
+						<br /><b>Ans. 875kgm<sup>-3</sup></b>
+					</li>
+					<li>
+						An empty density bottle has a mass of 25g. Its mass is 50g when full of water and 45g when full of another
+						liquid.<br />
+						Calculate;<br />
+						i) relative density of a Liquid.<br />
+						ii) Density of the Liquid<br />
+						<b>Ans. i) 0.8, ii) 800kgm<sup>-3</sup></b>
+					</li>
+					<li>
+						The mass of a density bottle of volume 160cm<sup>3</sup> is 110g when empty. Aluminium turnings are poured in the
+						density bottle
+						and the total mass is 160g. Water is then added to the turnings and till the density bottle is full. If the total
+						mass
+						and it's contents is 240g, calculate the density of aluminium turnings.
+						<br /><b>Ans. 0.625gcm<sup>-3</sup></b>
+					</li>
+					<li>
+						1800cm<sup>3</sup> of fresh water of density 1000kgm<sup>-3</sup> is mixed with sea water of density 1025kgm<sup>-3</sup>.
+						calculate the density of the Mixture.
+						<br /><b>Ans. 1.01375gcm<sup>-3</sup></b>
+					</li>
+					<li>
+						Bronze is made by mixing Molten Copper and Tin. If 100kg of the mixture contains 80% by mass of copper and 20% by
+						mass of Tin. Calculate
+						the density of Bronze if the density of copper is 8000kgm<sup>-3</sup> and the density of Tin is 5000kgm<sup>-3</sup>.
+						<br /><b>Ans. 7142.9kgm<sup>-3</sup></b>
+					</li>
+					<li>
+						A body weighs 75N. Calculate it's mass;<br />
+						<b>7.5kg</b>
+					</li>
+					<li>
+						An astronaut weighs 900N on earth, he weighs 150N. Calculate the moon's gravitational strength.
+						<br /><b>Ans. 1.67ms<sup>-2</sup></b>
+					</li>
+				</ul>
+			</nums>
+		</div>
+	</div>
+
+	<hr />
+	<div id="endOfChapter">
+		END of MASS and DENSITY
+	</div>
+	<hr />
+	<div class="row bgrid-halves">
+		<div class="column align-left">
+			<a title="Length, Area and Volume" href="?t=phy&tp=Mec&sbtp=lav&f=<?php print $get; ?>#lav" class="button special pull-left"><span
+				 class="glyphicon glyphicon-chevron-left"></span>Previous</a>
+
+		</div>
+		<div class="column align-right">
+			<a title="Force and Weight" href="?t=phy&tp=Mec&sbtp=faw&f=<?php print $get; ?>#faw" class="button special pull-right">NEXT<span
+				 class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+	</div>
+	<br />
+
+</section>

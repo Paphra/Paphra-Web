@@ -1,9 +1,10 @@
-<!DOCTYPE html>
 {% extends 'base.html' %}
-{% block title %}Home - paphra.com{% endblock title %}
+{% block title %}Home - Paphra{% endblock title %}
 {% block c_home %}class="current w3-bottombar"{% endblock c_home %}
+{% block page_title %}Paphra{% endblock page_title%}
 
 {% block body %}
+
 <section id="works">
 	<div class="row">
 		<div id="portfolio-wrapper">
@@ -26,17 +27,42 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="six columns portfolio-item">
 				<div class="item-wrap">
-					<a href="/educ/phy">
+					<a href="/elec">
+						<img alt="" src="{{ url_for('static', filename='images/elec/elecw007.jpg') }}">
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="fa fa-link"></i></div>
+					</a>
+					<div class="portfolio-item-meta">
+						<h5><a href="/elec">Electronics and Home appliances</a></h5>
+						<p class="">
+							Paphr Enterprises offers the best of the best in Electronics and home electrical
+							appliances of all types. The Electronics offered are of high quality and last forever in
+							all conditions. Products ranging from HQ bulbs, to HQ electrical cables and other
+							appliances like extensions.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="six columns portfolio-item">
+				<div class="item-wrap">
+					<a href="/educ">
 						<img alt="" src="{{ url_for('static', filename='images/educ/phy002 emc.jpg') }}">
 						<div class="overlay"></div>
 						<div class="link-icon"><i class="fa fa-link"></i></div>
 					</a>
 					<div class="portfolio-item-meta">
-						<h5><a href="/educ/phy">Physics</a></h5>
-						<p>The Physics for a firm revision ground, both A, and O' levels of Education.<br />
-							Practically and Theoretically making you ready for the final exams.</p>
+						<h5><a href="/educ">Educ</a></h5>
+						<p>
+							Under Educ, Paphra offers all sorts of education and revision options in the
+							field of education. Past papers, notes for different subjects. SUbjects such as
+							Physics, Mathematics, Biology and other science subjects are offered in
+							great detail at Paphra.
+						</p>
+
 					</div>
 				</div>
 			</div>
@@ -81,35 +107,15 @@
 					<div class="item-wrap">
 						<br />
 						<div class="portfolio-item-meta">
-							<h5><a>Web Tutorials</a></h5>
-							<p class="w3-medium">The perfect tutoring, understanding everything that you don't know about web-site
-								development.
-								Cheap but guaranteed to provide world wide accepted skills, to give you a job in the field. Improve your skills
-								that you already have.
+							<h5><a>Perfect Education Resources</a></h5>
+							<p class="w3-medium">Education options that change grades for all the students at
+								both levels (O and A). Theoretical and Practical Subjects. Providing the perfect
+								way to study ahead and get a second online class for all the students from all
+								walks of life.
 							</p>
 							<br />
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div id="portfolio-wrapper">
-				<div class="six columns portfolio-item">
-					<div class="item-wrap">
-						<br />
-						<div class="portfolio-item-meta">
-							<h5><a>Perfect Physics</a></h5>
-							<p class="w3-medium">Physics that changes grades for all the students at both levels (O and A)
-								of education. Theoretical Physics and Practical Physics. Providing the perfect
-								way to study ahead and get a second class for all the students.
-							</p>
-							<br />
-						</div>
-					</div>
-				</div>
-				<div class="six columns align-center">
-					<img alt="" src="{{ url_for('static', filename='images/educ/physw008.jpg') }}">
 				</div>
 			</div>
 		</div>

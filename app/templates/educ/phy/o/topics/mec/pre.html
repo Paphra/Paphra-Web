@@ -1,0 +1,392 @@
+<section id='lav' class=''>
+	<h2 class="mainHeading w3-medium w3-card-24" id="mainHeading">
+		Pessure
+	</h2>
+	<hr />
+	<div class="row" id="pressure">
+		<div class="twelve columns">
+			<div class="pressure">
+				<h2 id="term_pressure">Pressure</h2>
+				<b>Definition:</b>
+				<p>
+					This is the <a href="#force" onclick="showDef('force')">force</a> acting normally per unit
+					<a href="#area" onclick="showDef('area')">area</a> of the Surface.
+					Anything in the atmosphere that has <a href="#mass" onclick="showDef('mass')">mass</a> and
+					has a surface area, exerts pressure. When you sit down, your bottom exerts pressure on the seat.
+					When you strike a wall with a slap or a stick, you exert a pressure of the wall by applying a force.
+				</p>
+				<div class="">
+					<?php
+		    fraction_equals_table("Pressure", "Force", "Area");
+		    ?>
+				</div>
+				<p>
+					The SI Unit of pressure is Nm<sup>-2</sup> <br />
+					<?php equals_table("Nm<sup>-2</sup>", "1 Pa(Pascal)"); ?>
+				</p>
+			</div>
+		</div>
+		<div class="twelve columns">
+			<div id="maximum_and_minimum_pressure">
+				<h3>Maximum and Minimum Pressure</h3>
+				<p>
+					The relationship between pressure and surface area is as follows;<br />
+					\t The smaller the area of contact, the higher the pressure whereas the larger the area of contact, the lower
+					the pressure given constant weight. This explains why;
+				</p>
+				<ul id="listRm">
+					<li>
+						A nail has a pointed end so that the driving force is applied on a very small surface area hence pressure
+						is very high and this makes it to penetrate the material easily.
+					</li>
+					<li>
+						An elephant has toes made of flat surface area which makes the pressure o decrease hence exerting a small
+						force on the ground.
+					</li>
+					<li>
+						A tractor has very broad wheels and though very heavy, it doesn't sink into the soft ground because of
+						the large areas of the wheels which causes the tractor to exert a small pressure on the ground.
+					</li>
+					<li>
+						Bridges are thicker at the base that at the top so that it doesn't sink on the ground.
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="twelve columns">
+			<div id="pressue_in_liquids" class="pressure_in_liquids">
+				<h3>Pressure In Liquids</h3>
+				<p>
+					Liquids take up the shape of their container: hence the <a href="#volume" onclick="showDef('volume')">
+						volume</a> of the liquid filling a cylindrical container is equal to the volume of that
+					cylindrical container.
+				</p>
+				<b id="notes">Note that:</b>
+				<p>
+					Pressure at any point in a liquid is the same in all directions and depends on the following factors;
+				</p>
+				<ul id="listRm">
+					<li>Depth (height) below he surface of the liquid.</li>
+					<li>density of the liquid.</li>
+					<li>Acceleration due to gravity.</li>
+				</ul>
+
+				<div id="examples">
+					<h4>Examples:</h4>
+					<ul id="listNum">
+						<li>Find the pressure in a liquid of density 1000kgm<sup>-3</sup> at a height of 80cm.</li>
+						<div id="answer">
+							<table>
+								<?php
+				$first = "Pressure";
+				$equal_to = "h&rho;g";
+				equals_tr_td($first, $equal_to);
+				equals_tr_td("", "0.8 x 1000 x 10");
+				equals_tr_td("", "8,000Nm<sup>-2</sup>")
+				?>
+							</table>
+						</div>
+						<li>The pressure in a liquid is 10,000Nm<sup>-2</sup>. What is the height if it's density
+							is 1000kgm<sup>-3</sup>?</li>
+						<div id="answer">
+							<table>
+								<?php
+				equals_tr_td("Pressure", "h&rho;g");
+				equals_tr_td("10,000", "h x 1000 x 10");
+				equals_tr_td("10,000", "10,000h");
+				equals_tr_td("h", "1m");
+				?>
+							</table>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="twelve columns">
+			<div id="eqperiment_pressure_variation_in_a_liquid">
+				<ul id="listSq">
+					<li>
+						Three holes, A, B and C of the same diameter are made using a nail on a tall tin along a vertical line
+						on one side.
+					</li>
+					<li>The tin is then filled with water and observe the jets of water from holes, A, B, and C.</li>
+					<li></li>
+					<li>The lower hole, A throws water farthest followed by hole, B and lastly hole, C.</li>
+					<li>
+						Hence, pressure at A is greater than pressure at B and is greater than pressure at C.
+						P<sub>A</sub> &gt; P<sub>B</sub> &gt; P<sub>C</sub>
+					</li>
+					<li>Therefore, pressure increases with depth.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="twelve columns">
+			<div id="liquid_levels">
+				<h3>Liquid Levels</h3>
+				<p>
+					When a liquid is poured into a set of connected tubes with different shapes, it flows until the levels
+					are the same in all the tubes. This show that the liquid find its own level and pressure is the same in
+					all the tubes. Hence, pressure in liquids is independent of the shape and ara of the container.
+				</p>
+				<img />
+			</div>
+		</div>
+		<div class="twelve columns">
+			<div id="transmission_of_pressure_in_liquids">
+				<h3>Transmission of Pressure in Liquids</h3>
+				<p>
+					The principle of transmission of pressure in liquids states that; Pressure applied at any point of an
+					enclosed fluid is transmitted equally throughout the whole fluid. This is sometimes referred to as
+					<a href="#pascal" onclick="showPri('pascal')">Pascal's principle</a>.
+				</p>
+				<p>
+					When the plunger is pushed in, the liquid comes out of the holes with equal force. This shows that
+					pressure is transmitted equally to all parts of the liquid but the holes must be of the same diameter.
+				</p>
+				<img />
+			</div>
+		</div>
+	</div>
+	<hr />
+
+	<div id="hydraulic_machines" class="row">
+		<div class="twelve columns">
+			<h3>Hydraulic Machines</h3>
+			<p>
+				The principle of transmission of pressure in liquids is applied in hydraulic machines like <a href="#hydraulic_press_lift">
+					hydraulic press</a>, <a href="#hydraulic_press_lift">hydraulic lift</a>, and the <a href="#hydraulic_brake">
+					hydraulic brake</a> where a small force applied at one point of a liquid produces a much larger force at some
+				other point of the liquid.
+			</p>
+
+			<div id="hydraulic_press_lift">
+				<p>
+					It consists of a small piston of cross-sectional area A<sub>1</sub>, and a larger piston of cross-sectional
+					area A<sub>2</sub>. When a force is applied on the small piston, the pressure exerted by the force is
+					transmitted throughout the liquid to the larger piston.
+				</p>
+				<img />
+				<p>
+					When a force F<sub>1</sub> is applied on the small piston, then Pressure P<sub>1</sub> exerted on the liquid by
+					the small piston is given by;
+				</p>
+				<?php
+		fraction_equals_table("P<sub>1</sub>", "F<sub>1</sub>", "A<sub>1</sub>");
+		?>
+				<p>
+					This pressure P<sub>1</sub> is transmitted by the liquid to the larger piston. Hence the pressure P<sub>2</sub>
+					of the liquid acting on the area of the larger piston is equal to P<sub>1</sub>.<br />
+					Where;
+				</p>
+				<?php
+		fraction_equals_table("P<sub>2</sub>", "F<sub>2</sub>", "A<sub>2</sub>");
+		?>
+				<p>F<sub>2</sub> is the force produced on the larger piston.</p>
+				<?php
+		equals_table("F<sub>2</sub>", "P<sub>2</sub> x A<sub>2</sub>");
+		print "<p>But; </p>";
+		equals_table("P<sub>2</sub>", "P<sub>1</sub>");
+		print "<p>Hence, </p><table>";
+		fraction_equals_tr_td("F<sub>2</sub>", "F<sub>1</sub> x A<sub>2</sub>", "A<sub>1</sub>");
+		two_fractions_equals_tr_td("F<sub>2</sub>", "F<sub>1</sub>", "A<sub>2</sub>", "A<sub>1</sub>");
+		print "</table>"
+		?>
+
+				<div id="examples">
+
+				</div>
+			</div>
+
+			<div id="hydraulic_brake">
+				<h3>Hydraulic Brake</h3>
+				<p>It consists of brake fluid in the master cylinder connected to the slave cylinder:</p>
+				<ul id="listSq">
+					<li>
+						The force exerted on the foot pedal exerts pressure on the master cylinder
+						and the pressure is transmitted by the brake fluid to the slave cylinder.
+					</li>
+					<li>
+						This causes the pistons of the slave cylinder to open the brake shoe hence the
+						brake lining presses the drum and the rotation of the wheel is resisted.
+					</li>
+					<li>
+						When the force on the foot pedal is removed, the return spring pulls back the
+						brake show which then pushes the slave cylinder piston back.
+					</li>
+					<li>
+						The brake fluid has the following properties;
+						<ul id="listAlpha">
+							<li>
+								is incompressible to ensure pressure exerted at one point is transmitted
+								equally to all parts in the fluid.
+							</li>
+							<li>has low freezing point and a high boiling point</li>
+							<li>does not corrode the parts of the brake system.</li>
+						</ul>
+					</li>
+				</ul>
+
+				<img />
+			</div>
+		</div>
+	</div>
+	<hr />
+
+	<div id="atmospheric_pressure" class="row">
+		<div class="twelve columns" id="atmospheric_pressure">
+			<h3 id="term_atmospheric_presssure">Atmospheric Pressure:</h3>
+			<p>
+				Atmospheric pressure is the <a href="#pressure" onclick="showDef('pressure')">pressure</a> exerted against the
+				surface
+				by the weight of the air above that surface. That is the pressure exerted by the wight of the air in the
+				atmosphere. If
+				the number of air molecules above a surface increases, there are more molecules to exert a force on that surface
+				and
+				consequently, ,the pressure increases and the reduction in the number of air molecules above a surface
+				will result in a decrease in pressure.
+			</p>
+			<p>
+				Atmospheric pressure is measured with an instrument called a <a href="#barometer">"Barometer"</a>, that
+				is why atmospheric pressure is also referred to as barometric pressure. On any given planet, low pressure
+				areas have less atmospheric mass above their location, where-as high pressure areas have more atmospheric
+				mass above their location. Therefore, atmospheric pressure decreases with increase in elevation.
+			</p>
+			<p>
+				The density of air above the earth decreases as the altitude increases leading to the decrease of atmospheric
+				pressure at high altitudes. The density of air above the earth increases as the altitude decreases leading to
+				high atmospheric pressure at low altitudes.
+			</p>
+		</div>
+		<div class="twelve columns" id="experiment_demonstrate_atmospheric_pressure">
+			<h3>Experiment to Demonstrate Atmospheric Pressure</h3>
+			<h4>Collapsing Can Experiment:</h4>
+			<ul id="listSq">
+				<li>Remove the cork from the container and pour in some water.</li>
+				<li>Boil the water for some time as in (a).</li>
+				<li>Steam from boiling water drives out most of the air inside the container.</li>
+				<li>Replace the cork and allow the container to cool.</li>
+				<li>At first, steam pressure balances with the atmospheric pressure.</li>
+				<li>Pour cold water on the container to cool it faster.</li>
+				<li>
+					During the cooling, steam condenses and a partial vacuum is created inside the container and the container
+					crashes in because the air pressure inside becomes less than the atmospheric pressure.
+				</li>
+			</ul>
+			<img />
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns" id="applications_of_atmospheric_pressure">
+			<h3>Applications of Atmospheric Pressure</h3>
+			<ul id="listNum">
+				<div class="">
+					<li>
+						<h4>The Lift (Common) Pump</h4>
+					</li>
+					<div id="the_lift_common_pump">
+						<p>
+							A lift pump is used to raise water from wells. It consists of a cylindrical metal barrel
+							with a side tube and two valves.
+						</p>
+						<img />
+						<h5>Up-stroke:</h5>
+						<p id="lift_up_stroke">
+							During the upstroke, when the plunger moves upwards, outlet valve A closes and inlet valve
+							B opens. Water is then pushed up the pipe through inlet valve B by atmospheric pressure
+							acting on the surface of water in the well and moves to the space above the inlet valve.
+						</p>
+						<h5>Down-stroke:</h5>
+						<p id="lift_down_stroke">
+							During the down stroke, inlet valve B closes and outlet valve A opens. Water level in the
+							barrel rises further and in the next repeated strokes, water reaches the spout and pours out.
+						</p>
+						<div id="limitations_of_lift_pump">
+							<h5>Limitations of a Lift Pump</h5>
+							<ul id="listSq">
+								<li>
+									The lift pump can't raise water beyond 10m because of low atmospheric pressure in
+									places high above sea level and leakages at the valves and pistons.
+								</li>
+								<li>The atmospheric pressure can only support a column of water above 10m.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<li>
+						<h4>The force Pump</h4>
+					</li>
+					<div id="the_force_pump">
+						<p>It consists of tightly fitting piston, two valves and air chamber.</p>
+						<img />
+						<h5 id="force_upstroke">Up-Stroke</h5>
+						<p>
+							During the upstroke, air above valve B expands and it opens and outlet valve A closes.
+							The pressure reduces below atmospheric pressure and the atmospheric pressure on the
+							surface of water in the well pushes water up through inlet valve B.
+						</p>
+						<h5 id="force_down_stroke">Down-stroke</h5>
+						<p>
+							During the down stroke, inlet valve B closes and the increase in pressure opens
+							the out-let valve A and forces water into the chamber so that as water fills the chamber,
+							air is expanded and compressed at the upper part. During the next upstroke, valve A closes
+							and the compressed air expands ensuring continuous flow.
+						</p>
+						<div id="notes">
+							<h5>Note:</h5>
+							<p>
+								The force pump enables continuous flow of water and the height to which water is raised
+								does not depend on atmospheric pressure but on the following factors;
+							</p>
+							<ul id="listSq">
+								<li>Force applied during the down stroke.</li>
+								<li>Ability of the pump and its working parts to withstand pressure of water in the chamber.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<li>
+					<h4>The Siphon</h4>
+				</li>
+				<div id="the_siphon">
+
+				</div>
+			</ul>
+		</div>
+	</div>
+
+
+	<hr />
+
+
+	<div class="row" id="exercise">
+		<div class="">
+			<h3>Trial Exercise</h3>
+			<p>
+
+			</p>
+			<div class="row">
+
+			</div>
+		</div>
+	</div>
+	<div id="endOfChapter">
+		END of PRESSURE
+	</div>
+	<hr />
+	<div class="row bgrid-halves">
+		<div class="column align-left">
+			<a title="Work, Power and Energy" href="?t=phy&tp=Mec&sbtp=wpe&f=<?php print $get; ?>#wpe" class="button special pull-left"><span
+				 class="glyphicon glyphicon-chevron-left"></span>Previous</a>
+
+		</div>
+		<!--        <div class="column align-right">
+		    <a title="Mechanical Properties of Matter" href="?t=phy&tp=Mec&sbtp=mpm&f=<?php //print $get;                    ?>#mpm"
+		       class="button special pull-right">NEXT<span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>-->
+	</div>
+
+</section>

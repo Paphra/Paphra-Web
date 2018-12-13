@@ -1,0 +1,19 @@
+<section id="one">
+	<div class='content page'>
+		<div class="w3-white w3-padding">
+			{% if request.args['sbtp'] == 'int' or not request.args['sbtp'] %}
+			{% include 'educ/phy/o/topics/mec/int.html' %}
+			{% elif request.args['sbtp'] == 'lav' %}
+			{% include 'educ/phy/o/topics/mec/lav.html' %}
+			{% elif request.args['sbtp'] == 'wpe' %}
+			{% include 'educ/phy/o/topics/mec/wpe.html' %}
+			{% elif request.args['sbtp'] == 'faw' %}
+			{% include 'educ/phy/o/topics/mec/faw.html' %}
+			{% elif request.args['sbtp'] == 'mad' %}
+			{% include 'educ/phy/o/topics/mec/mad.html' %}
+			{% elif request.args['sbtp'] == 'pre' %}
+			{% include 'educ/phy/o/topics/mec/pre.html' %}
+			{% endif %}
+		</div>
+	</div>
+</section>

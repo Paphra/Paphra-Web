@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/myCss.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/my.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
@@ -29,7 +29,8 @@
         <div class="row">
             <div class="twelve columns">
                 <div class="logo">
-                    <a href="/"><img alt="" src="{{ url_for('static', filename='images/logo.png') }}"></a>
+                    <a href="/">
+                        <img alt="" src="{{ url_for('static', filename='images/logo.png') }}" height="70%" width="70%"></a>
                 </div>
                 <nav id="nav-wrap" class="w3-padding">
                     <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -37,13 +38,22 @@
                     <ul id="nav" class="nav">
                         <li {% block c_home %}{% endblock %}><a href="/">Home</a></li>
                         <li {% block c_web %}{% endblock %}><a href="/web">Web</a></li>
+                        <li {% block c_elec %}{% endblock %}><a href="/elec">Electronics</a></li>
                         <li {% block c_educ %}{% endblock %}><a href="/educ">Educ</a></li>
                         <li {% block c_abt %}{% endblock %}><a href="/about">About Us</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </header> 
+    </header>
+
+    <div id='page-title'>
+        <div class="row">
+            <div class="ten columns centered text-center">
+                <h1>{% block page_title %}{% endblock page_title %}<span>.</span></h1>
+            </div>
+        </div> <!-- Page Title End-->
+    </div>
 
     {% block body %}
     {% endblock %}
@@ -65,7 +75,12 @@
                         <h5>Services</h5>
                         <ul>
                             <li><a href="/web">
-                                <span class="fa fa-laptop"></span>Web Development</a></li>
+                                    <span class="fa fa-laptop"></span>Web Development</a></li>
+                        </ul>
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="/elec">
+                                    <span class="fa fa-laptop"></span>Electronics</a></li>
                         </ul>
                     </div>
                     <div class="columns">
@@ -117,7 +132,7 @@
         <script type="text/javascript" src="{{ url_for('static', filename='js/sendmail.js') }}"></script>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        
+
     </footer>
 
 </body>

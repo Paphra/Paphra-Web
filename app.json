@@ -1,0 +1,22 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "description": "As Technology is advancing at a very high speed, Paphra brings a platform to harmonize education and teaching speed.",
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "Paphra-Web",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

@@ -20,13 +20,14 @@ def web():
 def elec():
     pass
 
+
 @app.route("/educ")
 def educ():
     return render_template("educ/index.html")
 
 
 @app.route("/educ/phy")
-def educ_phy():    
+def educ_phy():
     return render_template("educ/phy/index.html")
 
 

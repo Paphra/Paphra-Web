@@ -1,17 +1,17 @@
 <section id="one">
 	<div class='content page'>
 		<div class="w3-white w3-padding">
-			{% if request.args['sbtp'] == 'int' or not request.args['sbtp'] %}
+			{% if request.args.st == 'int' or not request.args.st %}
 			{% include 'educ/phy/o/topics/mec/int.html' %}
-			{% elif request.args['sbtp'] == 'lav' %}
+			{% elif request.args.st == 'lav' %}
 			{% include 'educ/phy/o/topics/mec/lav.html' %}
-			{% elif request.args['sbtp'] == 'wpe' %}
+			{% elif request.args.st == 'wpe' %}
 			{% include 'educ/phy/o/topics/mec/wpe.html' %}
-			{% elif request.args['sbtp'] == 'faw' %}
+			{% elif request.args.st == 'faw' %}
 			{% include 'educ/phy/o/topics/mec/faw.html' %}
-			{% elif request.args['sbtp'] == 'mad' %}
+			{% elif request.args.st == 'mad' %}
 			{% include 'educ/phy/o/topics/mec/mad.html' %}
-			{% elif request.args['sbtp'] == 'pre' %}
+			{% elif request.args.st == 'pre' %}
 			{% include 'educ/phy/o/topics/mec/pre.html' %}
 			{% endif %}
 		</div>

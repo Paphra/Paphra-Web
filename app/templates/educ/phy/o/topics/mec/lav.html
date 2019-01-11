@@ -1,13 +1,12 @@
 <section id="lav" class="">
-	<h2 class="mainHeading w3-medium w3-card-24" id="mainHeading">
-		<a href="#length">Length</a>
+	<h3 class="mainHeading" id="mainHeading">
+		<a href="#length">Length</a>,
 		<a href="#area">Area</a>
 		and
 		<a href="#volume">Volume</a>
 		-
 		<a href="#exercise">Exercise</a>
-	</h2>
-	<hr />
+	</h3>
 	<div class="row" id="length">
 		<div class="twelve columns">
 			<h3 class="length">LENGTH</h3>
@@ -52,18 +51,18 @@
 				<p>Convert the following to the SI Unit of Length;</p>
 				<div class="list-group">
 					<ul id="listRm" class="w3-padding-left w3-margin-left">
-						<div class="row s-bgrid-halves bgrid-thirds">
+						<div class="row s-bgrid-halves bgrid-halves">
 							<div class="column">
 								<li class="list-group-item">200mm</li>
 								<div>
 									<div class="">
 										<table>
-											<?php
-					    equals_tr_td("1 m", "1000 mm");
-					    fraction_equals_tr_td("1 mm", "1 m", "1000");
-					    fraction_equals_tr_td("200 mm", "1 x 200 m", "1000");
-					    ans_tr_td("", "0.2 m");
-					    ?>
+											<script>
+												e_tr_td("1 m", "1000 mm");
+												f_e_tr_td("1 mm", "1 m", "1000");
+												f_e_tr_td("200 mm", "1 x 200 m", "1000");
+												a_tr_td("", "0.2 m");
+											</script>
 										</table>
 									</div>
 								</div>
@@ -73,26 +72,27 @@
 								<div>
 									<div class="w3-table-all">
 										<table>
-											<?php
-					    equals_tr_td("1 km", "1000 m");
-					    equals_tr_td("3 km", "3 x 1000 m");
-					    ans_tr_td("", "3000 m");
-					    ?>
+											<script>
+												e_tr_td("1 km", "1000 m");
+												e_tr_td("3 km", "3 x 1000 m");
+												a_tr_td("", "3000 m");
+											</script>
 										</table>
 									</div>
 								</div>
+								<hr>
 							</div>
 							<div class="column">
 								<li class="list-group-item">0.2cm</li>
 								<div>
 									<div class="">
 										<table>
-											<?php
-					    equals_tr_td("1 m", "100 cm");
-					    fraction_equals_tr_td("1 cm", "1 m", "100");
-					    fraction_equals_tr_td("0.2 cm", "1 x 0.2 m", "100");
-					    ans_tr_td("", "0.002 m");
-					    ?>
+											<script>
+												e_tr_td("1 m", "100 cm");
+												f_e_tr_td("1 cm", "1 m", "100");
+												f_e_tr_td("0.2 cm", "1 x 0.2 m", "100");
+												a_tr_td("", "0.002 m");
+											</script>
 										</table>
 									</div>
 								</div>
@@ -101,8 +101,6 @@
 					</ul>
 				</div>
 			</div>
-			<hr>
-
 		</div>
 		<hr />
 
@@ -139,7 +137,7 @@
 			</p>
 		</div>
 		<div class="four columns">
-			<img onclick="showImage('/phy/olevel/topics/mec/images/lav/verniercalipers1.jpg')" src="/phy/olevel/topics/mec/images/lav/verniercalipers1.jpg"
+			<img src="{{url_for('static', filename='images/educ/phy/o/tp/mec/lav/verniercalipers1.jpg')}}" onclick="shwImg(this)"
 			 width="100%" class="img-responsive" height="">
 		</div>
 	</div>
@@ -149,7 +147,7 @@
 			<h4>Micrometer Screw Gauge</h4>
 		</div>
 		<div class="four columns">
-			<img onclick="showPics('/phy/olevel/topics/mec/images/lav/micrometerscrewgaugelabelled2.jpg')" src="/phy/olevel/topics/mec/images/lav/micrometerscrewgaugelabelled2.jpg"
+			<img src="{{url_for('static', filename='images/educ/phy/o/tp/mec/lav/micrometerscrewgaugelabelled2.jpg')}}" onclick="shwImg(this)"
 			 width="100%" />
 		</div>
 	</div>
@@ -172,69 +170,70 @@
 			<h4>Converting units of Area</h4>
 			<div class="w3-table-all">
 				<table>
-					<tr>
-						<td>1 m<sup>2</sup></td>
-						<td>=</td>
-						<td>10,000 cm<sup>2</sup></td>
-					</tr>
-
-					<tr>
-						<td>1 m<sup>2</sup></td>
-						<td>=</td>
-						<td>1,000,000 mm<sup>2</sup></td>
-					</tr>
+					<script>
+						e_tr_td("1 m<sup>2</sup>", "10,000 cm<sup>2</sup>");
+						e_tr_td("1 m<sup>2</sup>", "1,000,000 mm<sup>2</sup>");
+					</script>
 				</table>
 			</div>
 		</div>
 	</div>
 	<hr />
 	<div class="row">
-		<div class="twelve columns s-bgrid-halves bgrid-thirds">
+		<div class="twelve columns">
 			<p>Change the Following units to SI units of Area;</p>
-			<div class="columns">
-				<h5>i. 1,000 mm<sup>2</sup></h5>
-				<table>
-					<?php
-		    equals_tr_td("1 m", "1,000 mm");
-		    equals_tr_td("1 m<sup>2</sup>", "1,000,000 mm<sup>2</sup>");
-		    fraction_equals_tr_td("1,000 mm<sup>2</sup>", "1 x 1000 m<sup>2</sup>", "1,000,000");
-		    ans_tr_td("", "0.001 m<sup>2</sup>");
-		    ?>
-				</table>
-			</div>
-			<div class="columns">
-				<h5>ii. 90 cm<sup>2</sup></h5>
-				<table>
-					<?php
-		    equals_tr_td("1 m", "100 cm");
-		    equals_tr_td("1 m<sup>2</sup>", "10,000 cm<sup>2</sup>");
-		    fraction_equals_tr_td("90 cm<sup>2</sup>", "1 x 90 m<sup>2</sup>", "10,000");
-		    ans_tr_td("", "0.009 m<sup>2</sup>")
-		    ?>
-				</table>
-			</div <div class="columns">
-			<h5>iii. 0.0045 km<sup>2</sup></h5>
+		</div>
+		<div class="six columns">
+			<h5>i. 1,000 mm<sup>2</sup></h5>
 			<div class="w3-table-all">
 				<table>
-					<?php
-			equals_tr_td("1 km", "1,000 m");
-			equals_tr_td("1 km<sup>2</sup>", "1,000,000 m<sup>2</sup>");
-			equals_tr_td("0.0045 km<sup>2</sup>", "0.0045 x 1,000,000 m<sup>2</sup>");
-			ans_tr_td("", "4,500 m<sup>2</sup>");
-			?>
+					<script>
+						e_tr_td("1 m", "1,000 mm");
+						e_tr_td("1 m<sup>2</sup>", "1,000,000 mm<sup>2</sup>");
+						f_e_tr_td("1,000 mm<sup>2</sup>", "1 x 1000 m<sup>2</sup>", "1,000,000");
+						a_tr_td("", "0.001 m<sup>2</sup>");
+					</script>
 				</table>
 			</div>
 		</div>
-		<div class="columns">
+		<div class="six columns">
+			<h5>ii. 90 cm<sup>2</sup></h5>
+			<div class="w3-table-all">
+				<table>
+					<script>
+						e_tr_td("1 m", "100 cm");
+						e_tr_td("1 m<sup>2</sup>", "10,000 cm<sup>2</sup>");
+						f_e_tr_td("90 cm<sup>2</sup>", "1 x 90 m<sup>2</sup>", "10,000");
+						a_tr_td("", "0.009 m<sup>2</sup>");
+					</script>
+				</table>
+			</div>
+		</div>
+		<div class="six columns">
+			<h5>iii. 0.0045 km<sup>2</sup></h5>
+			<div class="w3-table-all">
+				<table>
+					<script>
+						e_tr_td("1 km", "1,000 m");
+						e_tr_td("1 km<sup>2</sup>", "1,000,000 m<sup>2</sup>");
+						e_tr_td("0.0045 km<sup>2</sup>", "0.0045 x 1,000,000 m<sup>2</sup>");
+						a_tr_td("", "4,500 m<sup>2</sup>");
+					</script>
+				</table>
+			</div>
+		</div>
+		<div class="six columns">
 			<h5>iv. 7,600 cm<sup>2</sup></h5>
-			<table>
-				<?php
-		    equals_tr_td("1 m", "100 cm");
-		    equals_tr_td("1 m<sup>2</sup>", "10,000 cm<sup>2</sup>");
-		    fraction_equals_tr_td("7,600 cm<sup>2</sup>", "1 x 7,600 m<sup>2</sup>", "100,000");
-		    ans_tr_td("", "0.76 m<sup>2</sup>");
-		    ?>
-			</table>
+			<div class="w3-table-all">
+				<table>
+					<script>
+						e_tr_td("1 m", "100 cm");
+						e_tr_td("1 m<sup>2</sup>", "10,000 cm<sup>2</sup>");
+						f_e_tr_td("7,600 cm<sup>2</sup>", "1 x 7,600 m<sup>2</sup>", "100,000");
+						a_tr_td("", "0.76 m<sup>2</sup>");
+					</script>
+				</table>
+			</div>
 		</div>
 	</div>
 	<hr />
@@ -242,9 +241,10 @@
 		<div class="twelve columns">
 			<h4>Measurement of Area</h4>
 			<p>
-				The Area of a regular shaped surface such as a <b>Rectangle, Triangle, Circle, Sphere, Trapezium, </b> and
-				<b>Cylinder</b> can be obtained by applying appropriate formulae.
-				The table below shows some of the regular shapes and their corresponding formulae for the determination of Area.
+				The Area of a regular shaped surface such as a <b>Rectangle, Triangle, Circle, Sphere, Trapezium,
+				</b> and <b>Cylinder</b> can be obtained by applying appropriate formulae.
+				The table below shows some of the regular shapes and their corresponding formulae for the
+				determination of Area.
 			</p>
 			<div class="w3-table-all">
 				<table>
@@ -258,16 +258,10 @@
 						</td>
 						<td>
 							<table id="calcTable">
-								<tr>
-									<td>Area</td>
-									<td>=</td>
-									<td><sup>1</sup>/<sub>2</sub>(base x height)</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>=</td>
-									<td><sup>1</sup>/<sub>2</sub>(b x h)</td>
-								</tr>
+								<script>
+									e_tr_td("Area", "sup>1</sup>/<sub>2</sub>(base x height)")
+									e_tr_td("", "<sup>1</sup>/<sub>2</sub>(b x h)")
+								</script>
 								<tr>
 									<td></td>
 									<td>=</td>
@@ -347,7 +341,6 @@
 			</div>
 		</div>
 	</div>
-	</div>
 	<hr />
 	<div class="row">
 		<div class="twelve columns">
@@ -379,54 +372,60 @@
 			</div>
 			<hr />
 		</div>
+
 		<div class="twelve columns">
 			<h4>Change the Following units to SI units of Volume;</h4>
-			<div class="s-bgrid-halves bgrid-thirds">
-				<div class="columns">
-					<h5>i. 27 mm<sup>3</sup></h5>
-					<table>
-						<?php
-			equals_tr_td("1 m", "1000 mm");
-			equals_tr_td("1 m<sup>3</sup>", "1,000,000,000 mm<sup>3</sup>");
-			fraction_equals_tr_td("1,000 mm<sup>2</sup>", "1 x 27 m<sup>3</sup>", "1x10<sup>9</sup>");
-			ans_tr_td("", "2.7x10<sup>-8</sup> m<sup>3</sup>");
-			?>
-					</table>
-				</div>
+		</div>
 
-				<div class="columns">
-					<h5>ii. 34 litres</h5>
-					<table>
-						<?php
-			equals_tr_td("1 l", "1,000 cm<sup>3</sup>");
-			equals_tr_td("1 m<sup>3</sup>", "1,000,000 cm<sup>3</sup>");
-			fraction_equals_tr_td("34 l", "1000 x 34 m<sup>3</sup>", "1,000,000");
-			ans_tr_td("", "0.0034 m<sup>3</sup>");
-			?>
-					</table>
-
-				</div>
-				<div class="columns">
-					<h5>iii. 9,000 cm<sup>3</sup></h5>
-					<table>
-						<?php
-			equals_tr_td("1 m", "1000 cm");
-			equals_tr_td("1 m<sup>3</sup>", "1,000,000 cm<sup>3</sup>");
-			fraction_equals_tr_td("9,000 cm<sup>3</sup>", "1 x 9,000 m<sup>3</sup>", "1,000,000");
-			ans_tr_td("", "0.009 m<sup>3</sup>");
-			?>
-					</table>
-				</div>
-			</div>
-			<div class="columns">
-				<h5>iv. 45,000 litres</h5>
+		<div class="six columns">
+			<h5>i. 27 mm<sup>3</sup></h5>
+			<div class="w3-table-all">
 				<table>
-					<?php
-		    equals_tr_td("1 l", "1,000 cm<sup>3</sup>");
-		    equals_tr_td("1 m<sup>3</sup>", "1,000,000 cm<sup>3</sup>");
-		    fraction_equals_tr_td("45,000 l", "1000 x 45,000 m<sup>3</sup>", "1,000,000");
-		    ans_tr_td("", "45 m<sup>3</sup>");
-		    ?>
+					<script>
+						e_tr_td("1 m", "1000 mm");
+						e_tr_td("1 m<sup>3</sup>", "1,000,000,000 mm<sup>3</sup>");
+						f_e_tr_td("1,000 mm<sup>2</sup>", "1 x 27 m<sup>3</sup>", "1x10<sup>9</sup>");
+						a_tr_td("", "2.7x10<sup>-8</sup> m<sup>3</sup>");
+					</script>
+				</table>
+			</div>
+		</div>
+		<div class="six columns">
+			<h5>ii. 34 litres</h5>
+			<div class="w3-table-all">
+				<table>
+					<script>
+						e_tr_td("1 l", "1,000 cm<sup>3</sup>");
+						e_tr_td("1 m<sup>3</sup>", "1,000,000 cm<sup>3</sup>");
+						f_e_tr_td("34 l", "1000 x 34 m<sup>3</sup>", "1,000,000");
+						a_tr_td("", "0.0034 m<sup>3</sup>");
+					</script>
+				</table>
+			</div>
+		</div>
+		<div class="six column">
+			<h5>iii. 9,000 cm<sup>3</sup></h5>
+			<div class="w3-table-all">
+				<table>
+					<script>
+						e_tr_td("1 m", "1000 cm");
+						e_tr_td("1 m<sup>3</sup>", "1,000,000 cm<sup>3</sup>");
+						f_e_tr_td("9,000 cm<sup>3</sup>", "1 x 9,000 m<sup>3</sup>", "1,000,000");
+						a_tr_td("", "0.009 m<sup>3</sup>");
+					</script>
+				</table>
+			</div>
+		</div>
+		<div class="six columns">
+			<h5>iv. 45,000 litres</h5>
+			<div class="w3-table-all">
+				<table>
+					<script>
+						e_tr_td("1 l", "1,000 cm<sup>3</sup>");
+						e_tr_td("1 m<sup>3</sup>", "1,000,000 cm<sup>3</sup>");
+						f_e_tr_td("45,000 l", "1000 x 45,000 m<sup>3</sup>", "1,000,000");
+						a_tr_td("", "45 m<sup>3</sup>");
+					</script>
 				</table>
 			</div>
 		</div>
@@ -435,7 +434,8 @@
 			<h4>Volume Of regularly Shaped Objects:</h4>
 			<p>
 				The volume of regularly shaped objects such as <b>Cuboids, Cylinders, spheres</b> and
-				The table below shows some of the regular shapes and heir corresponding formulae for determination of their volume.
+				The table below shows some of the regular shapes and heir corresponding formulae for
+				determination of their volume.
 			</p>
 			<div class="w3-table-all">
 				<table>
@@ -563,8 +563,8 @@
 			<h4>Measuring the volume of an Irregular Object;</h4>
 			<p>
 				Volume of an Irregular Object/Solid is measured using the displacement method.
-				The method works with solids that are not soluble in water i.e. that do not absorb water or do not dissolve in
-				water.
+				The method works with solids that are not soluble in water i.e. that do not absorb water or
+				do not dissolve in water.
 			</p>
 			<hr />
 		</div>
@@ -573,10 +573,11 @@
 		<div class="eight columns">
 			<h5>1. Using a measuring Cylinder;</h5>
 			<p>
-				A measuring cylinder is an instrument, made of glass or plastic and it is calibrated or graduated with markings.
-				Measuring cylinders come in different sizes, for-example, 200ml, 100ml, 400ml, 500ml, and so on.
-				The water or any other liquid when poured into the measuring cylinder, the meniscus formed depends on the
-				type of liquid which is poured into it. The meniscus formed by water is always a downward curved meniscus.
+				A measuring cylinder is an instrument, made of glass or plastic and it is calibrated or graduated
+				with markings. Measuring cylinders come in different sizes, for-example, 200ml, 100ml, 400ml,
+				500ml, and so on. The water or any other liquid when poured into the measuring cylinder, the
+				meniscus formed depends on the type of liquid which is poured into it. The meniscus formed by
+				water is always a downward curved meniscus.
 			</p>
 			<h6>Procedure</h6>
 			<ul id="listSq">
@@ -590,8 +591,8 @@
 			</ul>
 		</div>
 		<div class="four columns">
-			<img onclick="showImage('/phy/olevel/topics/mec/images/lav/cylinder.jpg')" src="/phy/olevel/topics/mec/images/lav/cylinder.jpg"
-			 class="img-responsive" width="100%" />
+			<img onclick="shwImg(this)" src="{{url_for('static', filename='images/educ/phy/o/tp/meclav/cylinder.jpg')}}" class="img-responsive"
+			 width="100%" />
 
 		</div>
 	</div>
@@ -609,8 +610,8 @@
 			</ul>
 		</div>
 		<div class="five columns">
-			<img onclick="showImage('/phy/olevel/topics/mec/images/lav/overflow.jpg')" src="/phy/olevel/topics/mec/images/lav/overflow.jpg"
-			 class="img-responsive" width="100%" />
+			<img onclick="shwImg(this)" src="{{url_for('static', filename='images/educ/phy/o/tp/mec/lav/overflow.jpg')}}" class="img-responsive"
+			 width="100%" />
 		</div>
 	</div>
 	<hr />
@@ -624,183 +625,182 @@
 	</div>
 	<div class="row">
 		<div id="exercise" class="twelve columns">
-			<nums>
-				<ul>
-					<li>Express the following in scientific form;<br>
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<ul id="listRm">
-											<li>236,000</li>
-											<li>45,600</li>
-											<li>0.000676</li>
-											<li>0.00000123</li>
-										</ul>
-									</td>
-									<td>
-										<p>Answers</p>
-										<ul id="listRm">
-											<li>2.36x10<sup>5</sup></li>
-											<li>4.56x10<sup>4</sup></li>
-											<li>6.76x10<sup>-4</sup></li>
-											<li>1.23x10<sup>-6</sup></li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-					<li> Express the Following in metres<br>
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<ul class="" id="listRm">
-											<li>230cm</li>
-											<li>6,900mm</li>
-											<li>0.0045km</li>
-											<li>6,500dm</li>
-										</ul>
-									</td>
-									<td>
-										<p>Answers</p>
-										<ul id="listRm">
-											<li>2.3 m</li>
-											<li>6.9 m</li>
-											<li>4.5 m</li>
-											<li>650 m</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-					<li>Convert the following Units to m<sup>3</sup><br />
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<ul class="" id="listRm">
-											<li>25,000cm<sup>3</sup></li>
-											<li>56,000mm<sup>3</sup></li>
-											<li>20litres</li>
-											<li>1,200,000litres</li>
-										</ul>
-									</td>
-									<td>
-										<p>Answers</p>
-										<ul class="" id="listRm">
-											<li>2.5x10<sup>-2</sup> m<sup>3</sup></li>
-											<li>5.6x10<sup>-5</sup> m<sup>3</sup></li>
-											<li>2.0x10<sup>-2</sup> m<sup>3</sup></li>
-											<li>1.2x10<sup>3</sup> m<sup>3</sup></li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-					<li>Calculate the area of a circle whose radius is 7cm, in m<sup>2</sup><br />
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<div style="text-orientation: sideways;">
-											Answer
-										</div>
-									</td>
-									<td>
-										1.54x10<sup>-2</sup> m<sup>2</sup>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-					<li>A sheet of paper measures 25cm by 15cm. Calculate its area in mm<sup>2</sup><br />
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<div style="text-orientation: sideways;">
-											Answer
-										</div>
-									</td>
-									<td>
-										3.75x10<sup>4</sup> mm<sup>2</sup>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-					<li>Calculate the circumference and the area of a circle of radius 7.0cm.<br />
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<div style="text-orientation: sideways;">
-											Answer
-										</div>
-									</td>
-									<td>
-										44 cm, 154 cm<sup>2</sup>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-					<li>The water level in a burette is 30cm<sup>3</sup>. If 55 drops of water fall from the burette and
-						the volume of each drop is 0.12 cm<sup>3</sup>, find the final water level in the burette.<br />
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<div style="text-orientation: sideways;">
-											Answer
-										</div>
-									</td>
-									<td>
-										23.4 cm<sup>3</sup>
-									</td>
-								</tr>
-							</table>
-					</li>
-					<li>A wire of radius 3mm and length 200m is made into a sphere. Calculate
-						the radius of the sphere formed by the wire, in metres;<br />
-						<div class="w3-table-all">
-							<table>
-								<tr>
-									<td>
-										<div style="text-orientation: sideways;">
-											Answer
-										</div>
-									</td>
-									<td>
-										0.11m
-									</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-					<li>A sphere of radius 10cm is made into a cylindrical wire of same radius, Calculate the
-						length of the wire formed in mm;
-						<div class="w3-table-all">
-							<table>
-
+			<ul>
+				<li>Express the following in scientific form;<br>
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>
+									<ul id="listRm">
+										<li>236,000</li>
+										<li>45,600</li>
+										<li>0.000676</li>
+										<li>0.00000123</li>
+									</ul>
+								</td>
+								<td>
+									<p>Answers</p>
+									<ul id="listRm">
+										<li>2.36x10<sup>5</sup></li>
+										<li>4.56x10<sup>4</sup></li>
+										<li>6.76x10<sup>-4</sup></li>
+										<li>1.23x10<sup>-6</sup></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li> Express the Following in metres<br>
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>
+									<ul class="" id="listRm">
+										<li>230cm</li>
+										<li>6,900mm</li>
+										<li>0.0045km</li>
+										<li>6,500dm</li>
+									</ul>
+								</td>
+								<td>
+									<p>Answers</p>
+									<ul id="listRm">
+										<li>2.3 m</li>
+										<li>6.9 m</li>
+										<li>4.5 m</li>
+										<li>650 m</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>Convert the following Units to m<sup>3</sup><br />
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>
+									<ul class="" id="listRm">
+										<li>25,000cm<sup>3</sup></li>
+										<li>56,000mm<sup>3</sup></li>
+										<li>20litres</li>
+										<li>1,200,000litres</li>
+									</ul>
+								</td>
+								<td>
+									<p>Answers</p>
+									<ul class="" id="listRm">
+										<li>2.5x10<sup>-2</sup> m<sup>3</sup></li>
+										<li>5.6x10<sup>-5</sup> m<sup>3</sup></li>
+										<li>2.0x10<sup>-2</sup> m<sup>3</sup></li>
+										<li>1.2x10<sup>3</sup> m<sup>3</sup></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>Calculate the area of a circle whose radius is 7cm, in m<sup>2</sup><br />
+					<div class="w3-table-all">
+						<table>
+							<tr>
 								<td>
 									<div style="text-orientation: sideways;">
 										Answer
 									</div>
 								</td>
 								<td>
-									133.3m
+									1.54x10<sup>-2</sup> m<sup>2</sup>
 								</td>
-								</tr>
-							</table>
-						</div>
-					</li>
-				</ul>
-			</nums>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>A sheet of paper measures 25cm by 15cm. Calculate its area in mm<sup>2</sup><br />
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>
+									<div style="text-orientation: sideways;">
+										Answer
+									</div>
+								</td>
+								<td>
+									3.75x10<sup>4</sup> mm<sup>2</sup>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>Calculate the circumference and the area of a circle of radius 7.0cm.<br />
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>
+									<div style="text-orientation: sideways;">
+										Answer
+									</div>
+								</td>
+								<td>
+									44 cm, 154 cm<sup>2</sup>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>The water level in a burette is 30cm<sup>3</sup>. If 55 drops of water fall from the
+					burette and the volume of each drop is 0.12 cm<sup>3</sup>, find the final water level
+					in the burette.<br />
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>
+									<div style="text-orientation: sideways;">
+										Answer
+									</div>
+								</td>
+								<td>
+									23.4 cm<sup>3</sup>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>A wire of radius 3mm and length 200m is made into a sphere. Calculate
+					the radius of the sphere formed by the wire, in metres;<br />
+					<div class="w3-table-all">
+						<table>
+							<tr>
+								<td>
+									<div style="text-orientation: sideways;">
+										Answer
+									</div>
+								</td>
+								<td>
+									0.11m
+								</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>A sphere of radius 10cm is made into a cylindrical wire of same radius, Calculate the
+					length of the wire formed in mm;
+					<div class="w3-table-all">
+						<table>
+							<td>
+								<div style="text-orientation: sideways;">
+									Answer
+								</div>
+							</td>
+							<td>
+								133.3m
+							</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 	<hr />
@@ -808,15 +808,14 @@
 	<div id="endOfChapter">
 		END of LENGTH, AREA and VOLUME CHAPTER
 	</div>
+
 	<hr />
 	<div class="row bgrid-halves">
 		<div class="column align-left">
-			<a title="Introduction" href="?t=phy&tp=Mec&sbtp=int&f=<?php print $get; ?>#int" class="button special pull-left">Previous</a>
-
+			<a title="Introduction" href="?tp=mec&sbtp=int#int" class="button special pull-left">Previous</a>
 		</div>
 		<div class="column align-right">
-			<a title="Mass And Density" href="?t=phy&tp=Mec&sbtp=den&f=<?php print $get; ?>#den" class="button special pull-right">NEXT</a>
+			<a title="Mass And Density" href="?tp=mec&sbtp=mad#mad" class="button special pull-right">NEXT</a>
 		</div>
 	</div>
-
 </section>

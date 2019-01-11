@@ -1,16 +1,16 @@
 <li>
-	<a href="?tp=mechanics#int" {% if request.args['tp']=='mechanics' or not request.args['tp'] %} class='w3-bottombar current'
+	<a href="?tp=mec#int" {% if request.args.tp=='mec' or not request.args.tp %} class='w3-bottombar current'
 	 {% endif %}>Mechanics</a>
 	<ul class="disc">
-		{% if request.args['tp'] == 'mechanics' or not request.args['tp'] %}
+		{% if request.args.tp == 'mec' or not request.args.tp %}
 		{% include 'educ/phy/o/topics/mec/sbtps.html' %}
 		{% endif %}
 	</ul>
 </li>
 <li>
-	<a href="?tp=light#int" {% if request.args['tp']=='light' %} class='w3-bottombar current' {% endif %}>Light</a>
+	<a href="?tp=lig#int" {% if request.args.tp=='lig' %} class='w3-bottombar current' {% endif %}>Light</a>
 	<ul class="disc">
-		{% if request.args['tp'] == 'light' %}
+		{% if request.args.tp == 'lig' %}
 		{% include 'educ/phy/o/topics/lig/sbtps.html' %}
 		{% endif %}
 	</ul>

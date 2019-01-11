@@ -10,9 +10,9 @@
 
 {% block educ_content %}
 
-{% if request.args['tp'] == 'mechanics' or not request.args['tp'] %}
+{% if request.args.tp == 'mec' or not request.args.tp %}
 {% include 'educ/phy/o/topics/mec.html' %}
-{% elif request.args['tp'] == 'light' %}
+{% elif request.args.tp == 'lig' %}
 {% include 'educ/phy/o/topics/lig.html' %}
 {% endif %}
 

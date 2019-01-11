@@ -8,9 +8,7 @@ h1 {
     color: blue;
 }
 
-#mainBody,
-.hm,
-#hm {
+#mainBody, .hm, #hm {
     height: 100%;
     width: 100%;
     background-attachment: scroll;
@@ -22,9 +20,7 @@ h1 {
     color: black;
 }
 
-h3,
-h4,
-hr {
+h3, h4, hr {
     padding: 0;
 }
 
@@ -225,8 +221,7 @@ a {
     display: none;
 }
 
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -248,8 +243,7 @@ a {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -273,8 +267,7 @@ a {
     -webkit-transition: background-color 1s ease-in;
 }
 
-.active,
-#dot:hover {
+.active, #dot:hover {
     background-color: #00ffff;
 }
 
@@ -291,7 +284,6 @@ a {
     from {
         opacity: .2
     }
-
     to {
         opacity: 1
     }
@@ -301,7 +293,6 @@ a {
     from {
         opacity: .2
     }
-
     to {
         opacity: 1
     }
@@ -311,7 +302,6 @@ a {
     from {
         opacity: .2
     }
-
     to {
         opacity: 1
     }
@@ -350,25 +340,11 @@ body.hm li.hm {
     align-content: flex-end;
 }
 
-#jan,
-#feb,
-#mar,
-#april,
-#may,
-#june,
-#july,
-#aug,
-#sept,
-#oct,
-#nov,
-#dec {
+#jan, #feb, #mar, #april, #may, #june, #july, #aug, #sept, #oct, #nov, #dec {
     display: none;
 }
 
-#hidden1,
-#hidden2,
-#hidden3,
-#hidden4 {
+#hidden1, #hidden2, #hidden3, #hidden4 {
     display: none;
 }
 
@@ -376,16 +352,7 @@ body.hm li.hm {
     display: none;
 }
 
-#homeTab,
-#classTab,
-#meTab,
-#chatsTab,
-#studentsTab,
-#aboutTab,
-#groupsTab,
-#papersTab,
-#loginTab,
-#signupTab {
+#homeTab, #classTab, #meTab, #chatsTab, #studentsTab, #aboutTab, #groupsTab, #papersTab, #loginTab, #signupTab {
     background-color: #00aa00;
     padding: 1%;
     font-size: 90%;
@@ -393,48 +360,19 @@ body.hm li.hm {
     font-style: oblique;
 }
 
-#homeTab:hover,
-#classTab:hover,
-#meTab:hover,
-#chatsTab:hover,
-#studentsTab:hover,
-#loginTab:hover,
-#signupTab:hover,
-#aboutTab:hover,
-#groupsTab:hover {
+#homeTab:hover, #classTab:hover, #meTab:hover, #chatsTab:hover, #studentsTab:hover, #loginTab:hover, #signupTab:hover, #aboutTab:hover, #groupsTab:hover {
     background-color: #00ffff;
     ;
     color: black;
 }
 
-body.homeTab #homeTab,
-body.classTab #classTab,
-body.meTab #meTab,
-body.chatsTab #chatsTab,
-body.studentsTab #studentsTab,
-body.groupsTab #groupsTab,
-body.papersTab #papersTab,
-body.phy #phy,
-body.art #art,
-body.bio #bio,
-body.bus #bus,
-body.his #his,
-body.geo #geo,
-body.com #com,
-body.che #che,
-body.lan #lan,
-body.mat #mat,
-body.mus #mus,
-body.rel #rel,
-body.aboutTab #aboutTab {
+body.homeTab #homeTab, body.classTab #classTab, body.meTab #meTab, body.chatsTab #chatsTab, body.studentsTab #studentsTab, body.groupsTab #groupsTab, body.papersTab #papersTab, body.phy #phy, body.art #art, body.bio #bio, body.bus #bus, body.his #his, body.geo #geo, body.com #com, body.che #che, body.lan #lan, body.mat #mat, body.mus #mus, body.rel #rel, body.aboutTab #aboutTab {
     background-color: #00ffff;
     ;
     color: black;
 }
 
-body.loginTab #loginTab,
-body.signupTab #signupTab,
-body.aboutTab #aboutTab {
+body.loginTab #loginTab, body.signupTab #signupTab, body.aboutTab #aboutTab {
     background-color: #00ffff;
     color: black;
 }
@@ -462,16 +400,7 @@ body.aboutTab #aboutTab {
     vertical-align: top;
 }
 
-#msnTab,
-#visTab,
-#outrTab,
-#frndsTab,
-#othTab,
-#phtsTab,
-#vidsTab,
-#gandoTab,
-#schlTab,
-#grpsTab {
+#msnTab, #visTab, #outrTab, #frndsTab, #othTab, #phtsTab, #vidsTab, #gandoTab, #schlTab, #grpsTab {
     background-color: #0099cc;
 }
 
@@ -531,23 +460,7 @@ body.aboutTab #aboutTab {
 
 #subtpList li {}
 
-body.int #int,
-body.aaf #aaf,
-body.den #den,
-body.faw #faw,
-body.lav #lav,
-body.mac #mac,
-body.mif #mif,
-body.mli #mli,
-body.mom #mom,
-body.mome #mome,
-body.mot #mot,
-body.mpm #mpm,
-body.nlm #nlm,
-body.pnm #pnm,
-body.pre #pre,
-body.qns #qns,
-body.wpe #wpe {
+body.int #int, body.aaf #aaf, body.den #den, body.faw #faw, body.lav #lav, body.mac #mac, body.mif #mif, body.mli #mli, body.mom #mom, body.mome #mome, body.mot #mot, body.mpm #mpm, body.nlm #nlm, body.pnm #pnm, body.pre #pre, body.qns #qns, body.wpe #wpe {
     background-color: white;
 }
 
@@ -559,8 +472,7 @@ body.mot li#mot {
     background-color: white;
 }
 
-.int,
-.mot {
+.int, .mot {
     text-align: left;
 }
 
@@ -618,12 +530,7 @@ table td {
     color: white;
 }
 
-#listAlpha li,
-#listNum li,
-#listRm li,
-#listNone li,
-#listSq li,
-#listNoneNone li {
+#listAlpha li, #listNum li, #listRm li, #listNone li, #listSq li, #listNoneNone li {
     font-family: georgia, serif;
     margin-left: 1em;
 }
@@ -745,10 +652,7 @@ table td {
     font-style: italic;
 }
 
-.one,
-.two,
-.three,
-.four {
+.one, .two, .three, .four {
     color: #000;
 }
 
@@ -764,14 +668,10 @@ table td {
     font-family: serif;
 }
 
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div {
+table, table td, table td .v_c, td, .v_c, td .v_c {
+    vertical-align: center;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, div {
     margin: 2em;
 }

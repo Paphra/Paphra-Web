@@ -10,14 +10,6 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/google0af444ae00950439.html")
-def gooc():
-    return render_template("google0af444ae00950439.html")
-
-@app.route("/google0af444ae00950439")
-def gooc():
-    return render_template("google0af444ae00950439.html")
-
 
 @app.route("/web")
 def web():
